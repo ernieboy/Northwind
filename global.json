@@ -1,0 +1,7 @@
+{
+  "project": [
+    "src",
+    "test"
+  ],
+  "projects": [ "src", "../../projects" ]
+}
