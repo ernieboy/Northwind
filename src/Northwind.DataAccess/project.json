@@ -2,7 +2,8 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "DotNetCoreLibrary": "1.0.0-*"
+    "DotNetCoreLibrary": "1.0.0-*",
+    "Northwind.Models": "1.0.0-*"
   },
 
   "frameworks": {

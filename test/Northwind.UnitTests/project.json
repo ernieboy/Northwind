@@ -6,7 +6,8 @@
     "Northwind.Business": "1.0.0-*",
     "Northwind.Web": "1.0.0-*",
     "xunit": "2.1.0",
-    "dotnet-test-xunit":"2.2.0-preview2-build1029"
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "Northwind.Models": "1.0.0-*"
   },
 
   "testRunner": "xunit",

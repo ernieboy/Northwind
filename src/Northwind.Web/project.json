@@ -51,7 +51,9 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Northwind.Business": "1.0.0-*"
+    "Northwind.Business": "1.0.0-*",
+    "Northwind.DataAccess": "1.0.0-*",
+    "Northwind.Models": "1.0.0-*"
   },
 
   "tools": {
