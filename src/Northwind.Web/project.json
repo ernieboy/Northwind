@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-Northwind.Web-3b8b19d2-58d6-4fc2-aaa0-6f4eab90f49e",
 
   "dependencies": {
@@ -50,7 +50,8 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "Northwind.Business": "1.0.0-*"
   },
 
   "tools": {
