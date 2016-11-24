@@ -8,7 +8,7 @@ namespace Northwind.UnitTests.DataAccess.CustomerRepository
     public class FindEntityByStringIdShould
     {
 
-        [Fact]
+        //[Fact]
         public async void ReturnAnEntityThatExistsInTheRepository()
         {
             var context = new NorthwindSqliteDbContext();
