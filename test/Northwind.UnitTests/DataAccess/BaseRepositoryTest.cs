@@ -36,9 +36,9 @@ namespace Northwind.UnitTests.DataAccess
             services.AddDbContext<NorthwindSqliteDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("NorthwindConnection")));
 
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.RollingFile(Path.Combine(@"C:\data\logs", "log-{Date}.txt"))
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(Configuration)
+           //     .MinimumLevel.Debug()
+             //   .WriteTo.RollingFile(Path.Combine(@"C:\data\logs", "log-{Date}.txt"))
                 .CreateLogger();
 
             LoggerFactory = new LoggerFactory();
