@@ -1,18 +1,17 @@
-﻿using Northwind.DataAccess;
-using Northwind.DataAccess.Repositories;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Core.Common.Data.Interfaces;
 using Northwind.Models;
 using Xunit;
 
 namespace Northwind.UnitTests.DataAccess.CustomerRepository
 {
-    public class FindEntityByStringIdShould
+    public class FindEntityByStringIdShould : BaseRepositoryTest
     {
 
-        //[Fact]
+        [Fact]
         public async void ReturnAnEntityThatExistsInTheRepository()
         {
-            var context = new NorthwindSqliteDbContext();
-            ICustomerRepository repo = new Northwind.DataAccess.Repositories.CustomerRepository(context);
+            IDataRepository<Customer> repo = ServiceProvider.GetService<IDataRepository<Customer>>();
             Customer cust = await repo.FindEntityByStringId("ALFKI");
             Assert.True(cust != null);
         }
