@@ -3,7 +3,7 @@ using Northwind.Models;
 
 namespace Northwind.DataAccess
 {
-    public  class NorthwindDbContext : DbContext
+    public  class NorthwindSqliteDbContext : DbContext  
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,6 +33,9 @@ namespace Northwind.DataAccess
 
             modelBuilder.Entity<Customer>(entity =>
             {
+                entity.Ignore(e => e.Id);
+                entity.Ignore(e => e.ObjectState);
+                entity.Ignore(e => e.RowVersion);
                 entity.HasKey(e => e.CustomerId)
                     .HasName("sqlite_autoindex_Customers_1");
             });
@@ -43,7 +46,7 @@ namespace Northwind.DataAccess
                     .HasName("sqlite_autoindex_EmployeeTerritories_1");
             });
 
-            modelBuilder.Entity<Employees>(entity =>
+            modelBuilder.Entity<Employee>(entity =>
             {
                 entity.HasKey(e => e.EmployeeId)
                     .HasName("sqlite_autoindex_Employees_1");
@@ -61,7 +64,7 @@ namespace Northwind.DataAccess
                     .HasName("sqlite_autoindex_Orders_1");
             });
 
-            modelBuilder.Entity<Products>(entity =>
+            modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.ProductId)
                     .HasName("sqlite_autoindex_Products_1");
@@ -91,10 +94,10 @@ namespace Northwind.DataAccess
         public virtual DbSet<CustomerDemographics> CustomerDemographics { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<EmployeeTerritory> EmployeeTerritories { get; set; }
-        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<OrderDetails> OrderDetails { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Region> Region { get; set; }
         public virtual DbSet<Shipper> Shippers { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }

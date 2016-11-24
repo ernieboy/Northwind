@@ -1,10 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Core.Common.Data.Interfaces;
+using Core.Common.Data.Models;
+using Core.Common.Utilities;
 
 namespace Northwind.Models
 {
-    public partial class Employees
+    public sealed class Employee : BaseObjectWithState, IObjectWithState
     {
+        public Employee()
+        {
+            Guid = StringUtils.GenerateLowercase32DigitsGuid();
+            DateCreated = DateTime.Now;
+            DateModified = DateCreated;
+        }
+        [Key]
         [Column("EmployeeID", TypeName = "int")]
         public long EmployeeId { get; set; }
         [Required]

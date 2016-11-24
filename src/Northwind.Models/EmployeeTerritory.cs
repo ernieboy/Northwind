@@ -2,7 +2,7 @@
 
 namespace Northwind.Models
 {
-    public partial class EmployeeTerritory
+    public sealed class EmployeeTerritory
     {
         [Column("EmployeeID", TypeName = "int")]
         public long EmployeeId { get; set; }

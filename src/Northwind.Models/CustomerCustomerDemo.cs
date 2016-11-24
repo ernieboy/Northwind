@@ -2,7 +2,7 @@
 
 namespace Northwind.Models
 {
-    public partial class CustomerCustomerDemo
+    public sealed class CustomerCustomerDemo
     {
         [Column("CustomerID", TypeName = "varchar(5)")]
         public string CustomerId { get; set; }

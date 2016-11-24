@@ -1,10 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Core.Common.Data.Interfaces;
+using Core.Common.Data.Models;
+using Core.Common.Utilities;
 
 namespace Northwind.Models
 {
-    public partial class Supplier
+    public sealed class Supplier : BaseObjectWithState, IObjectWithState
     {
+        public Supplier()
+        {
+            Guid = StringUtils.GenerateLowercase32DigitsGuid();
+            DateCreated = DateTime.Now;
+            DateModified = DateCreated;
+        }
+
+        [Key]
         [Column("SupplierID", TypeName = "int")]
         public long SupplierId { get; set; }
         [Required]

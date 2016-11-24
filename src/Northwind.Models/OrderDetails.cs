@@ -1,10 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using Core.Common.Data.Interfaces;
+using Core.Common.Data.Models;
+using Core.Common.Utilities;
 
 namespace Northwind.Models
 {
     [Table("Order Details")]
-    public partial class OrderDetails
+    public sealed class OrderDetails : BaseObjectWithState, IObjectWithState
     {
+        public OrderDetails()
+        {
+            Guid = StringUtils.GenerateLowercase32DigitsGuid();
+            DateCreated = DateTime.Now;
+            DateModified = DateCreated;
+        }
+
         [Column("OrderID", TypeName = "int")]
         public long OrderId { get; set; }
         [Column("ProductID", TypeName = "int")]

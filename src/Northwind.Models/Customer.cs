@@ -1,10 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Core.Common.Data.Interfaces;
+using Core.Common.Data.Models;
+using Core.Common.Utilities;
+
 
 namespace Northwind.Models
 {
-    public partial class Customer
+    public sealed class Customer : BaseObjectWithState, IObjectWithState
     {
+        public Customer()
+        {
+            Guid = StringUtils.GenerateLowercase32DigitsGuid();
+            DateCreated = DateTime.Now;
+            DateModified = DateCreated;
+        }
+
+        [Key]
         [Column("CustomerID", TypeName = "varchar(5)")]
         public string CustomerId { get; set; }
         [Required]

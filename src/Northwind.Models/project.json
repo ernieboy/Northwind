@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
@@ -12,7 +12,8 @@
         "portable-net45+win8+dnxcore50",
         "portable-net45+win8"
       ]
-    }
+    },
+    "DotNetCoreLibrary": "1.0.0-*"
   },
 
   "frameworks": {
@@ -26,7 +27,6 @@
       "imports": "dnxcore50"
     }
   },
-
   "tools": {
     "Microsoft.EntityFrameworkCore.Tools": {
       "version": "1.0.0-preview2-final",
