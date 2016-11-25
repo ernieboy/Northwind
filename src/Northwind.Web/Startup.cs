@@ -75,8 +75,13 @@ namespace Northwind.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            //   loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //  loggerFactory.AddDebug();
+
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(Configuration)
+              //     .MinimumLevel.Debug()
+              //   .WriteTo.RollingFile(Path.Combine(@"C:\data\logs", "log-{Date}.txt"))
+              .CreateLogger();
             loggerFactory.AddSerilog();
 
             app.UseApplicationInsightsRequestTelemetry();
@@ -106,6 +111,10 @@ namespace Northwind.Web
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "spa-fallback",
+                    template: "{*url}",
+                    defaults: new { controller = "Home", action = "Index" });
             });
         }
     }
