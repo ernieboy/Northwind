@@ -9,13 +9,12 @@ using Xunit;
 
 namespace Northwind.UnitTests.Business.CustomerBusiness
 {
-    public class ListItemsShould : BaseTest
+    public class ListItemsShould : TestBase
     {
 
         [Fact]
         public void ReturnEntitiesWhenPresentInDatabase()
         {
-
             IEntityBusiness<Customer> cutomerBusiness = ServiceProvider.GetService<IEntityBusiness<Customer>>();
             int? pageSize = 10;
             string sortCol = "CustomerID";
@@ -26,7 +25,7 @@ namespace Northwind.UnitTests.Business.CustomerBusiness
                 pageNumber, pageSize, sortCol, sortDir, searchTerms);
 
             Assert.True(result.Success);
-            var list = result.ObjectsDictionary["list"] as IEnumerable<Customer>;
+            IEnumerable<Customer> list = result.ObjectsDictionary["list"] as IEnumerable<Customer>;
             Assert.True(list.Count() == pageSize);
 
         }
