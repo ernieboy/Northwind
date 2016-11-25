@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Common.Data.Business;
+using Core.Common.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -9,9 +11,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Northwind.Business;
+using Northwind.DataAccess;
+using Northwind.Models;
 using Northwind.Web.Data;
 using Northwind.Web.Models;
 using Northwind.Web.Services;
+using Serilog;
 
 namespace Northwind.Web
 {
@@ -45,8 +51,10 @@ namespace Northwind.Web
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
+            services.AddDbContext<NorthwindSqliteDbContext>(options =>
+               options.UseSqlite(Configuration.GetConnectionString("NorthwindConnection")));
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+              options.UseSqlite(Configuration.GetConnectionString("NorthwindConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -57,6 +65,12 @@ namespace Northwind.Web
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+            //Repositories services 
+            services.AddScoped<IDataRepository<Customer>, DataAccess.Repositories.CustomerRepository>();
+
+            //Business services
+            services.AddScoped<IEntityBusiness<Customer>, CustomerBusiness>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,6 +78,7 @@ namespace Northwind.Web
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
 
             app.UseApplicationInsightsRequestTelemetry();
 

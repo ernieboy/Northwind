@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Northwind.UnitTests.DataAccess.CustomerRepository
 {
-    public class FindAllEntitiesByCriteriaShould : BaseTest
+    public class FindAllEntitiesByCriteriaShould : TestBase
     {
         private readonly ILogger _logger;
 
