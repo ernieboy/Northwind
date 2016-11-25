@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Core.Common.Data.Business;
+﻿using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -60,6 +56,9 @@ namespace Northwind.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddMvc();
 
             // Add application services.
@@ -96,6 +95,7 @@ namespace Northwind.Web
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseIdentity();
 
