@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,15 +8,16 @@ using Northwind.DataAccess;
 using Northwind.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Northwind.Business;
 using Serilog;
 
 namespace Northwind.UnitTests.DataAccess
 {
-    public abstract class BaseRepositoryTest
+    public abstract class TestBase      
     {
         private Microsoft.Extensions.Logging.ILogger _logger;
 
-        protected BaseRepositoryTest()
+        protected TestBase()
         {
             SetUp();
         }
@@ -44,13 +46,19 @@ namespace Northwind.UnitTests.DataAccess
             LoggerFactory = new LoggerFactory();
             LoggerFactory.AddSerilog();
 
-            _logger = LoggerFactory.CreateLogger<BaseRepositoryTest>();
+            _logger = LoggerFactory.CreateLogger<TestBase>();
 
             //Repositories services 
             services.AddScoped<IDataRepository<Customer>, Northwind.DataAccess.Repositories.CustomerRepository>();
+           
+
+            //Business services
+            services.AddScoped<IEntityBusiness<Customer>, CustomerBusiness>();
+
+            //Note, make sure this line comes after all services have been added to the DI System.
             ServiceProvider = services.BuildServiceProvider();
 
-            
+
 
 
         }

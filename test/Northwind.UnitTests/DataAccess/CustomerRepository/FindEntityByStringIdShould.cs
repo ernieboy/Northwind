@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Northwind.UnitTests.DataAccess.CustomerRepository
 {
-    public class FindEntityByStringIdShould : BaseRepositoryTest
+    public class FindEntityByStringIdShould : TestBase
     {
         private readonly Microsoft.Extensions.Logging.ILogger _logger ;
 
