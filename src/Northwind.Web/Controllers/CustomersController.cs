@@ -25,12 +25,11 @@ namespace Northwind.Web.Controllers
             _logger = logger;
         }
 
-
-
         public IActionResult Index(
             int? pageNumber, int? pageSize, string sortCol,
             string sortDir, string searchTerms)
         {
+            _logger.LogInformation("In the Index of the controller!");
             return ExecuteExceptionsHandledActionResult(() =>
             {
                 OperationResult result = _customerEntityBusiness.ListItems(
