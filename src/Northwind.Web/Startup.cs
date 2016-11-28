@@ -1,11 +1,14 @@
-﻿using Core.Common.Data.Business;
+﻿using System.IO;
+using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
 using Northwind.Business;
 using Northwind.DataAccess;
@@ -100,6 +103,14 @@ namespace Northwind.Web
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"node_modules")),
+                RequestPath = new PathString("/node_modules")
+            });
+
             app.UseSession();
 
             app.UseIdentity();
@@ -111,10 +122,9 @@ namespace Northwind.Web
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(
-                    name: "spa-fallback",
-                    template: "{*url}",
-                    defaults: new { controller = "Home", action = "Index" });
+                routes.MapSpaFallbackRoute(
+                     name: "spa-fallback",
+                     defaults: new { controller = "AngularSpa", action = "Index" });
             });
         }
     }

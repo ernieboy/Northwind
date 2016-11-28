@@ -1,0 +1,16 @@
+﻿<angular-app> <i class="fa fa-spin fa-circle-o-notch"></i>Loading...</angular-app>
+
+
+@section scripts {
+    <!-- Polyfill(s) for older browsers -->
+<script src="~/node_modules/core-js/client/shim.min.js"></script>
+
+<script src="~/node_modules/zone.js/dist/zone.js"></script>
+<script src="~/node_modules/reflect-metadata/Reflect.js"></script>
+<script src="~/node_modules/systemjs/dist/system.src.js"></script>
+<!-- Configure SystemJS -->
+<script src="~/angular-app/systemjs.config.js"></script>
+<script>
+      System.import('angular-app/main').catch(function(err){ console.error(err); });
+</script>
+}
