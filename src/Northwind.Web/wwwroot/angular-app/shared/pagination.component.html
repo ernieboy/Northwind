@@ -1,0 +1,20 @@
+<div *ngIf(showPaginationControls)>
+    <p>Showing {{offsetFromZero}} to {{offsetUpperBound}} records of {{totalNumberOfRecords}}. This is page {{pageNumber}} of
+        {{totalNumberOfPages}}.
+    </p>
+
+    <ul class="pagination pagination-sm">
+        <li *ngIf="(showFirstLink == true)"> <a (click)="onPageClick(1)">&lt;&lt; First</a></li>
+        <li *ngIf="(showPreviousLink == true)"> <a (click)="onPageClick(pageNumber-1)">&lt;&lt; Prev</a></li>
+        <li class="inactive" *ngFor="let page of pagesLeftOfCurrentPageArray">
+            <a (click)="onPageClick(page)">{{page}}</a>
+        </li>
+        <li class="active"><a (click)="onPageClick(pageNumber)">{{pageNumber}}</a></li>
+        <li class="inactive" *ngFor="let page of pagesRightOfCurrentPageArray">
+            <a (click)="onPageClick(page)">{{page}}</a>
+        </li>
+        <li *ngIf="(showNextLink == true)"> <a (click)="onPageClick(pageNumber+1)">&gt;&gt; Next</a></li>
+        <li *ngIf="(showLastLink == true)"> <a (click)="onPageClick(totalNumberOfPages)">&gt;&gt; Last</a></li>
+    </ul>
+
+</div>

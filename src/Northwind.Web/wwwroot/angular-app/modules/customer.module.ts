@@ -1,19 +1,20 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 
-import { CutomersListingComponent } from '../components/customers/customers-listing.component';
-
+import { CustomerService } from '../components/customers/customer.service';
+import { CustomersListingComponent } from '../components/customers/customers-listing.component';
 
 @NgModule({
     imports: [
         RouterModule.forChild([
-            { path: 'customers-list', component: CutomersListingComponent }
+            { path: 'customers-list', component: CustomersListingComponent }
         ])
     ],
     declarations: [
-        CutomersListingComponent
+        CustomersListingComponent
     ],
     providers: [
+        CustomerService
     ]
 })
 export class CustomerModule { }

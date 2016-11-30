@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from '../components/app.component';
 import { WelcomeComponent } from '../components/welcome/welcome.component';
 
-/* Feature Modules */
 import { CustomerModule } from './customer.module';
 
 @NgModule({
