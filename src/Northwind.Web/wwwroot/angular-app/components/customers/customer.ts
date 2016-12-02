@@ -1,7 +1,7 @@
 ﻿export interface ICustomer {
     customerId: number;
-    name: string;
-    company: string;
+    contactName: string;
+    companyName: string;
     guid: string;
     dateCreated: string;
     dateModified: string;
