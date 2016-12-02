@@ -10,12 +10,12 @@ import { ICustomerList } from "./ICustomerList";
     templateUrl: 'angular-app/components/customers/customers-listing.component.html'
 })
 export class CustomersListingComponent extends BaseListingComponent implements OnInit {
-    pageTitle: string = 'Product Listing component 77';
+    pageTitle: string = 'Products Listing';
 
       customersList: ICustomerList = {
-    customers: null,
-    paginationData: null
-};
+        customers: null,
+        paginationData: null
+    };
 
     constructor(private _customerService: CustomerService) {
         super();

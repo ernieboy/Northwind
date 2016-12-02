@@ -21,7 +21,7 @@ var CustomersListingComponent = (function (_super) {
     function CustomersListingComponent(_customerService) {
         _super.call(this);
         this._customerService = _customerService;
-        this.pageTitle = 'Product Listing component 77';
+        this.pageTitle = 'Products Listing';
         this.customersList = {
             customers: null,
             paginationData: null

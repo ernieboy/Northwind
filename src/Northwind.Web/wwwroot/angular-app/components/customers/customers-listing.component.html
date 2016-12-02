@@ -29,14 +29,14 @@
     <form>
         <label for="searchTerms">Search terms separated by commas:</label>
         <input type="text" class="form-control" id="searchTerms" [(ngModel)]="searchTerms" name="searchTerms" />
-        <input type="submit" value="Search" class="btn btn-sm" (click)="pageData(page,paginationData.pageSize,searchTerms,paginationData.sortColumn,paginationData.sortDirection)" />
+        <input type="submit" value="Search" class="btn btn-sm" (click)="pageData(page,customersList.paginationData.pageSize,searchTerms,customersList.paginationData.sortColumn,customersList.paginationData.sortDirection)" />
         <input type="submit" value="Clear Search" class="btn btn-sm" (click)="clearSearch()" />
         <br />
         <label for="sortColumn">Sort column</label>
-        <select class="form-control" id="sortColumn" (change)="pageData(page,paginationData.pageSize,searchTerms,$event.target.value,paginationData.sortDirection)"
+        <select class="form-control" id="sortColumn" (change)="pageData(page,customersList.paginationData.pageSize,searchTerms,$event.target.value,customersList.paginationData.sortDirection)"
                 required [(ngModel)]="sortColumn" name="sortColumn">
-            <option value="CustomerId">Customer Id</option>
-            <option value="Name">Customer name</option>
+            <option value="customerId">Customer Id</option>
+            <option value="contactName">Customer name</option>
         </select>
         <br />
         <label for="sortDirection">Sort direction</label>
