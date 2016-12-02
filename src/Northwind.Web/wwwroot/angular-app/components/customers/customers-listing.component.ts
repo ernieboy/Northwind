@@ -15,6 +15,7 @@ export class CustomersListingComponent extends BaseListingComponent implements O
 
     constructor(private _customerService: CustomerService) {
         super();
+        this.sortColumn = 'CustomerId';
     }
 
     ngOnInit(): void {
@@ -28,19 +29,14 @@ export class CustomersListingComponent extends BaseListingComponent implements O
         this.searchTerms = (searchTerms == null ? '' : searchTerms);
         this.sortColumn = sortColumn;
         this.sortDirection = sortDirection;
-
-        this._customerService.getCustomers(
-            this.pageNumber,
+        
+        this._customerService.getCustomers(this.pageNumber,
             this.pageSize,
             this.searchTerms,
             this.sortColumn,
             this.sortDirection)
-            .then(response => {
-                this.paginationData = <IPaginationData>response.paginationData;
-                this.initPagesArray();
-                this.customers = <ICustomer[]>response.list;
-            }
-            );
+            .subscribe(customers => this.customers = customers,
+            error => this.errorMessage = <any>error);
     }
 
     onPageNumberChanged(newPageNumber: number): void {

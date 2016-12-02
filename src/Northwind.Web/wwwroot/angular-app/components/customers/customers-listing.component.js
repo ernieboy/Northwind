@@ -22,6 +22,7 @@ var CustomersListingComponent = (function (_super) {
         _super.call(this);
         this._customerService = _customerService;
         this.pageTitle = 'Product Listing component 77';
+        this.sortColumn = 'CustomerId';
     }
     CustomersListingComponent.prototype.ngOnInit = function () {
         this.pageData(this.pageNumber, this.pageSize, this.searchTerms, this.sortColumn, this.sortDirection);
@@ -34,11 +35,7 @@ var CustomersListingComponent = (function (_super) {
         this.sortColumn = sortColumn;
         this.sortDirection = sortDirection;
         this._customerService.getCustomers(this.pageNumber, this.pageSize, this.searchTerms, this.sortColumn, this.sortDirection)
-            .then(function (response) {
-            _this.paginationData = response.paginationData;
-            _this.initPagesArray();
-            _this.customers = response.list;
-        });
+            .subscribe(function (customers) { return _this.customers = customers; }, function (error) { return _this.errorMessage = error; });
     };
     CustomersListingComponent.prototype.onPageNumberChanged = function (newPageNumber) {
         this.pageNumber = newPageNumber;

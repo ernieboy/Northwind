@@ -11,6 +11,7 @@
 /// <reference path="angular-app/shared/config.js" />
 /// <reference path="angular-app/shared/interfaces/ipaginationdata.js" />
 /// <reference path="angular-app/shared/pagination.component.js" />
+/// <reference path="angular-app/shared/shared.module.js" />
 /// <reference path="angular-app/systemjs.config.js" />
 /// <reference path="js/site.js" />
 /// <reference path="lib/bootstrap/dist/js/bootstrap.js" />

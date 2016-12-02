@@ -8,17 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
 var http_1 = require('@angular/http');
+var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/operator/do');
 require('rxjs/add/operator/catch');
 require('rxjs/add/operator/map');
+var config_1 = require('../../shared/config');
 var CustomerService = (function () {
     function CustomerService(_http) {
+        this._http = _http;
     }
     CustomerService.prototype.getCustomers = function (pageNumber, pageSize, searchTerms, sortColumn, sortDirection) {
         if (pageNumber === void 0) { pageNumber = 1; }
@@ -26,19 +25,22 @@ var CustomerService = (function () {
         if (searchTerms === void 0) { searchTerms = ''; }
         if (sortColumn === void 0) { sortColumn = 'Name'; }
         if (sortDirection === void 0) { sortDirection = 'ASC'; }
-        return "";
+        var paginationData = '?pageNumber=' + pageNumber +
+            '&pageSize=' + pageSize + '&searchTerms=' + searchTerms +
+            '&sortCol=' + sortColumn + '&sortDir=' + sortDirection;
+        return this._http.get(config_1.Config.apiUrls.customersListing + paginationData)
+            .map(function (response) { return response.json(); })
+            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
+            .catch(this.handleError);
     };
     CustomerService.prototype.handleError = function (error) {
-        // In a real world app, we might use a remote logging infrastructure
-        // We'd also dig deeper into the error to get a better message
-        var errMsg = (error.message) ? error.message :
-            error.status ? error.status + " - " + error.statusText : 'Server error';
-        console.error(errMsg); // log to console instead
-        return "";
+        // in a real world app, we may send the server to some remote logging infrastructure
+        // instead of just logging it to the console
+        console.error(error);
+        return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
     CustomerService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_2.Inject(http_1.Http)), 
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
     ], CustomerService);
     return CustomerService;

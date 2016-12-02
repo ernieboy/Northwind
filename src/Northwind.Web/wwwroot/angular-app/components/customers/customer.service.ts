@@ -1,37 +1,40 @@
 ﻿import { Injectable } from '@angular/core';
-import { Inject } from '@angular/core';
 import { Http, Response } from '@angular/http';
-
-import {ICustomer} from "./customer";
-
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
-import {Config} from '../../shared/config';
+import { Config } from '../../shared/config';
+import { ICustomer } from "./customer";
 
 @Injectable()
 export class CustomerService {
 
-    constructor(@Inject(Http) _http: Http) { }
+    constructor(private _http: Http) { }
 
     getCustomers(pageNumber: number = 1,
         pageSize: number = 20,
         searchTerms: string = '',
         sortColumn: string = 'Name',
         sortDirection: string = 'ASC'): Observable<ICustomer[]>{
-        return "";
+
+        let paginationData: string = '?pageNumber=' + pageNumber +
+            '&pageSize=' + pageSize + '&searchTerms=' + searchTerms +
+            '&sortCol=' + sortColumn + '&sortDir=' + sortDirection;
+
+        return this._http.get(Config.apiUrls.customersListing + paginationData)
+            .map((response: Response) => <ICustomer[]>response.json())
+            .do(data => console.log('All: ' + JSON.stringify(data)))
+            .catch(this.handleError);
     }
 
 
 
-    private handleError(error: any) {
-        // In a real world app, we might use a remote logging infrastructure
-        // We'd also dig deeper into the error to get a better message
-        let errMsg = (error.message) ? error.message :
-            error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-        console.error(errMsg); // log to console instead
-        return "";
+    private handleError(error: Response) {
+        // in a real world app, we may send the server to some remote logging infrastructure
+        // instead of just logging it to the console
+        console.error(error);
+        return Observable.throw(error.json().error || 'Server error');
     }
 
    

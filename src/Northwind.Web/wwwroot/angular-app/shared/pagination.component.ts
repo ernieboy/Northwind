@@ -1,6 +1,5 @@
-
-import {Component, OnChanges, Input,
-    Output, EventEmitter, OnInit } from '@angular2/core';
+import { Component, OnChanges, Input,
+    Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
     selector: 'pagination-controls',

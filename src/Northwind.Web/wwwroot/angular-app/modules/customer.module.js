@@ -12,12 +12,14 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var customer_service_1 = require('../components/customers/customer.service');
 var customers_listing_component_1 = require('../components/customers/customers-listing.component');
+var shared_module_1 = require('../shared/shared.module');
 var CustomerModule = (function () {
     function CustomerModule() {
     }
     CustomerModule = __decorate([
         core_1.NgModule({
             imports: [
+                shared_module_1.SharedModule,
                 router_1.RouterModule.forChild([
                     { path: 'customers-list', component: customers_listing_component_1.CustomersListingComponent }
                 ])

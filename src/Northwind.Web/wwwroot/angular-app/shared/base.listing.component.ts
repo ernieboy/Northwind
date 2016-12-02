@@ -1,6 +1,7 @@
 ﻿import {IPaginationData} from "./interfaces/IPaginationData"
 
-export abstract class BaseListingComponent {
+//Note, this class should be abstract but if it's made abstract then it can't be listed in the the shared.modules.ts file.
+export  class BaseListingComponent {
 
     protected paginationData: IPaginationData;
 
