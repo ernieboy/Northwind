@@ -30,8 +30,18 @@ var CustomerService = (function () {
             '&sortCol=' + sortColumn + '&sortDir=' + sortDirection;
         return this._http.get(config_1.Config.apiUrls.customersListing + paginationData)
             .map(function (response) { return response.json(); })
+            .map(this.mapJsonResultToViewObject)
             .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
             .catch(this.handleError);
+    };
+    CustomerService.prototype.mapJsonResultToViewObject = function (result) {
+        var customersList = {
+            customers: null,
+            paginationData: null
+        };
+        customersList.customers = result.list;
+        customersList.paginationData = result.paginationData;
+        return customersList;
     };
     CustomerService.prototype.handleError = function (error) {
         // in a real world app, we may send the server to some remote logging infrastructure

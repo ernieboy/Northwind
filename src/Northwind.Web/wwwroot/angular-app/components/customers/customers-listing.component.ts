@@ -12,9 +12,10 @@ import { ICustomerList } from "./ICustomerList";
 export class CustomersListingComponent extends BaseListingComponent implements OnInit {
     pageTitle: string = 'Product Listing component 77';
 
-    customersList: ICustomerList;
-   // customers: ICustomer[];
-   // paginationData: IPaginationData;
+      customersList: ICustomerList = {
+    customers: null,
+    paginationData: null
+};
 
     constructor(private _customerService: CustomerService) {
         super();
@@ -40,6 +41,7 @@ export class CustomersListingComponent extends BaseListingComponent implements O
             this.sortDirection)
             .subscribe(customersList => this.customersList = customersList,
             error => this.errorMessage = <any>error);
+        var myVar = "hello";
     }
 
     onPageNumberChanged(newPageNumber: number): void {

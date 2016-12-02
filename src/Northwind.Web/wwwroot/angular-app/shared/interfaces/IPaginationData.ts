@@ -7,5 +7,5 @@ export interface IPaginationData {
     totalNumberOfPages: number;
     searchTermsCommaSeparated: string;
     sortColumn: string;
-    sortDirection: string
+    sortDirection: string;
 }

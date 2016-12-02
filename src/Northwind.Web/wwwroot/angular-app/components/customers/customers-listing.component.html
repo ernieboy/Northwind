@@ -2,7 +2,7 @@
 {{pageTitle}}
 
 <br />
-<div *ngIf(customersList)>
-    <p>Got some</p>
+<div *ngIf(customersList.customers)>
+    <p>Got some {{customersList.customers.length}}</p>
 
 </div>

@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 import { Config } from '../../shared/config';
 import { ICustomer } from "./customer";
 import { ICustomerList } from "./ICustomerList";
+import { IPaginationData } from "../../shared/interfaces/IPaginationData"
 
 @Injectable()
 export class CustomerService {
@@ -24,9 +25,20 @@ export class CustomerService {
             '&sortCol=' + sortColumn + '&sortDir=' + sortDirection;
 
         return this._http.get(Config.apiUrls.customersListing + paginationData)
-            .map((response: Response) => <ICustomerList> response.json())
+            .map((response: Response) => response.json())
+            .map(this.mapJsonResultToViewObject)
             .do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
+    }
+
+    mapJsonResultToViewObject(result) {
+        let customersList: ICustomerList = {
+            customers: null,
+            paginationData: null
+        };
+        customersList.customers = <ICustomer[]>result.list;
+       customersList.paginationData = <IPaginationData>result.paginationData;
+        return customersList;
     }
 
 
