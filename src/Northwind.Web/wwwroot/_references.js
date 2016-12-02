@@ -3,6 +3,7 @@
 /// <reference path="angular-app/components/customers/customer.js" />
 /// <reference path="angular-app/components/customers/customer.service.js" />
 /// <reference path="angular-app/components/customers/customers-listing.component.js" />
+/// <reference path="angular-app/components/customers/icustomerlist.js" />
 /// <reference path="angular-app/components/welcome/welcome.component.js" />
 /// <reference path="angular-app/main.js" />
 /// <reference path="angular-app/modules/app.module.js" />

@@ -18,6 +18,8 @@ var customer_service_1 = require("./customer.service");
 var base_listing_component_1 = require('../../shared/base.listing.component');
 var CustomersListingComponent = (function (_super) {
     __extends(CustomersListingComponent, _super);
+    // customers: ICustomer[];
+    // paginationData: IPaginationData;
     function CustomersListingComponent(_customerService) {
         _super.call(this);
         this._customerService = _customerService;
@@ -35,7 +37,7 @@ var CustomersListingComponent = (function (_super) {
         this.sortColumn = sortColumn;
         this.sortDirection = sortDirection;
         this._customerService.getCustomers(this.pageNumber, this.pageSize, this.searchTerms, this.sortColumn, this.sortDirection)
-            .subscribe(function (customers) { return _this.customers = customers; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (customersList) { return _this.customersList = customersList; }, function (error) { return _this.errorMessage = error; });
     };
     CustomersListingComponent.prototype.onPageNumberChanged = function (newPageNumber) {
         this.pageNumber = newPageNumber;

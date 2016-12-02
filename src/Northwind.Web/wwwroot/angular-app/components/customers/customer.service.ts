@@ -6,6 +6,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import { Config } from '../../shared/config';
 import { ICustomer } from "./customer";
+import { ICustomerList } from "./ICustomerList";
 
 @Injectable()
 export class CustomerService {
@@ -16,14 +17,14 @@ export class CustomerService {
         pageSize: number = 20,
         searchTerms: string = '',
         sortColumn: string = 'Name',
-        sortDirection: string = 'ASC'): Observable<ICustomer[]>{
+        sortDirection: string = 'ASC'): Observable<ICustomerList>{
 
         let paginationData: string = '?pageNumber=' + pageNumber +
             '&pageSize=' + pageSize + '&searchTerms=' + searchTerms +
             '&sortCol=' + sortColumn + '&sortDir=' + sortDirection;
 
         return this._http.get(Config.apiUrls.customersListing + paginationData)
-            .map((response: Response) => <ICustomer[]>response.json())
+            .map((response: Response) => <ICustomerList> response.json())
             .do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
     }

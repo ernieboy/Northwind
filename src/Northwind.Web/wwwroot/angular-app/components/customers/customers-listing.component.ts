@@ -2,7 +2,8 @@
 import {ICustomer} from "./customer";
 import {CustomerService} from "./customer.service";
 import {IPaginationData} from "../../shared/interfaces/IPaginationData"
-import {BaseListingComponent} from '../../shared/base.listing.component';
+import { BaseListingComponent } from '../../shared/base.listing.component';
+import { ICustomerList } from "./ICustomerList";
 
 
 @Component({
@@ -11,7 +12,9 @@ import {BaseListingComponent} from '../../shared/base.listing.component';
 export class CustomersListingComponent extends BaseListingComponent implements OnInit {
     pageTitle: string = 'Product Listing component 77';
 
-    customers: ICustomer[];
+    customersList: ICustomerList;
+   // customers: ICustomer[];
+   // paginationData: IPaginationData;
 
     constructor(private _customerService: CustomerService) {
         super();
@@ -35,7 +38,7 @@ export class CustomersListingComponent extends BaseListingComponent implements O
             this.searchTerms,
             this.sortColumn,
             this.sortDirection)
-            .subscribe(customers => this.customers = customers,
+            .subscribe(customersList => this.customersList = customersList,
             error => this.errorMessage = <any>error);
     }
 
