@@ -8,7 +8,7 @@ namespace Northwind.UnitTests.DataAccess.CustomerRepository
 {
     public class FindEntityByStringIdShould : TestBase
     {
-        private readonly Microsoft.Extensions.Logging.ILogger _logger ;
+        private readonly ILogger _logger ;
 
         public FindEntityByStringIdShould()
         {

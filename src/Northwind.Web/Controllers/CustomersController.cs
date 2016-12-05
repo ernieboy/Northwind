@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Core.Common.Data.Business;
 using Core.Common.Data.Models;
@@ -18,7 +19,8 @@ namespace Northwind.Web.Controllers
         public CustomersController(
              IEntityBusiness<Customer> customerEntityBusiness,
              IHostingEnvironment hostingEnvironment,
-             ILogger<CustomersController> logger)
+             ILoggerFactory loggerFactory,
+             ILogger<CustomersController> logger) : base(loggerFactory)
         {
             _customerEntityBusiness = customerEntityBusiness;
             this.hostingEnvironment = hostingEnvironment;
