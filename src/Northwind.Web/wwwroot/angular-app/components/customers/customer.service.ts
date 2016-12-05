@@ -41,6 +41,15 @@ export class CustomerService {
         return customersList;
     }
 
+    getCustomerById(id: string): Observable<ICustomer> {
+        let lastIndexOfSlash: number = Config.apiUrls.findCustomerById.lastIndexOf("\/");
+        let apiUrl: string = Config.apiUrls.findCustomerById.toString().substring(0, (lastIndexOfSlash + 1)) + id;
+        return this._http.get(apiUrl)
+            .map((response: Response) => <ICustomer>response.json())
+            .do(data => console.log('Customer: ' + JSON.stringify(data)))
+            .catch(this.handleError);
+    }
+
 
 
     private handleError(error: Response) {

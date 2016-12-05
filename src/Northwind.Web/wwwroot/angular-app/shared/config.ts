@@ -9,7 +9,8 @@ export let Config = {
     add: 3
   },
   apiUrls: {
-      customersListing: apiRoot + 'customers' 
+      customersListing: apiRoot + 'customers',
+      findCustomerById: apiRoot + 'customers' + '/{id}' 
      
   },
   entityFrameworkEntityState: {

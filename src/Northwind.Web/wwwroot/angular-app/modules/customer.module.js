@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var customer_service_1 = require('../components/customers/customer.service');
 var customers_listing_component_1 = require('../components/customers/customers-listing.component');
+var customer_details_component_1 = require('../components/customers/customer-details.component');
+var customer_guard_service_1 = require('../components/customers/customer-guard-service');
 var shared_module_1 = require('../shared/shared.module');
 var CustomerModule = (function () {
     function CustomerModule() {
@@ -21,14 +23,21 @@ var CustomerModule = (function () {
             imports: [
                 shared_module_1.SharedModule,
                 router_1.RouterModule.forChild([
-                    { path: 'customers-list', component: customers_listing_component_1.CustomersListingComponent }
+                    { path: 'customers-list', component: customers_listing_component_1.CustomersListingComponent },
+                    {
+                        path: 'customer/:id',
+                        canActivate: [customer_guard_service_1.CustomerDetailsGuard],
+                        component: customer_details_component_1.CustomerDetailsComponent
+                    }
                 ])
             ],
             declarations: [
-                customers_listing_component_1.CustomersListingComponent
+                customers_listing_component_1.CustomersListingComponent,
+                customer_details_component_1.CustomerDetailsComponent
             ],
             providers: [
-                customer_service_1.CustomerService
+                customer_service_1.CustomerService,
+                customer_guard_service_1.CustomerDetailsGuard
             ]
         }), 
         __metadata('design:paramtypes', [])

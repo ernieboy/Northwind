@@ -21,7 +21,9 @@
                 {{customer.companyName}}
             </td>
             <td>
-                <a [routerLink]="['ArtistEdit', {id: customer.customerId}]">Edit customer</a>
+                <a [routerLink]="['/customer', customer.customerId]">
+                    {{customer.contactName}}
+                </a>
             </td>
         </tr>
     </table>

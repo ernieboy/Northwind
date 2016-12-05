@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Core.Common.Data.Business;
 using Core.Common.Data.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,14 @@ namespace Northwind.Web.Controllers.Api
         public CustomersController(IEntityBusiness<Customer> customerBusiness )
         {
             _customerBusiness = customerBusiness;
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> FindByStringId(string id)
+        {
+            var customer = await _customerBusiness.FindEntityByStringId(id);
+            return Json(customer);
         }
 
         [HttpGet]

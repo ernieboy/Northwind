@@ -1,0 +1,34 @@
+﻿<div class='panel panel-primary' *ngIf='customer'>
+    <div class='panel-heading' style='font-size: large'>
+        {{pageTitle + ': ' + customer.contactName}}
+    </div>
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>Customer Id:</div>
+                    <div class='col-md-6'>{{customer.customerId}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Contact Name:</div>
+                    <div class='col-md-6'>{{customer.contactName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Company Name:</div>
+                    <div class='col-md-6'>{{customer.companyName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>guid:</div>
+                    <div class='col-md-6'>{{customer.guid}}</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width: 80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>

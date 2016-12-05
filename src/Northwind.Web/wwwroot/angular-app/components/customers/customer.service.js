@@ -43,6 +43,14 @@ var CustomerService = (function () {
         customersList.paginationData = result.paginationData;
         return customersList;
     };
+    CustomerService.prototype.getCustomerById = function (id) {
+        var lastIndexOfSlash = config_1.Config.apiUrls.findCustomerById.lastIndexOf("\/");
+        var apiUrl = config_1.Config.apiUrls.findCustomerById.toString().substring(0, (lastIndexOfSlash + 1)) + id;
+        return this._http.get(apiUrl)
+            .map(function (response) { return response.json(); })
+            .do(function (data) { return console.log('Customer: ' + JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
     CustomerService.prototype.handleError = function (error) {
         // in a real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console
