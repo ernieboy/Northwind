@@ -33,7 +33,7 @@ var CustomerDetailsComponent = (function () {
         this._customerService.getCustomerById(id).subscribe(function (customer) { return _this.customer = customer; }, function (error) { return _this.errorMessage = error; });
     };
     CustomerDetailsComponent.prototype.onBack = function () {
-        this._router.navigate(['/customers']);
+        this._router.navigate(['/customers-list']);
     };
     CustomerDetailsComponent = __decorate([
         core_1.Component({

@@ -39,7 +39,7 @@ export class CustomerDetailsComponent implements OnInit, OnDestroy {
     }
 
     onBack(): void {
-        this._router.navigate(['/customers']);
+        this._router.navigate(['/customers-list']);
     }
 
     
