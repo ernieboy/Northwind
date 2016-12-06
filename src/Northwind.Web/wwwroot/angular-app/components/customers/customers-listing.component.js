@@ -40,7 +40,6 @@ var CustomersListingComponent = (function (_super) {
         this.sortDirection = sortDirection;
         this._customerService.getCustomers(this.pageNumber, this.pageSize, this.searchTerms, this.sortColumn, this.sortDirection)
             .subscribe(function (customersList) { return _this.customersList = customersList; }, function (error) { return _this.errorMessage = error; });
-        var myVar = "hello";
     };
     CustomersListingComponent.prototype.onPageNumberChanged = function (newPageNumber) {
         this.pageNumber = newPageNumber;

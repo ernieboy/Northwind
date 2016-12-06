@@ -2,7 +2,7 @@
 {{pageTitle}}
 
 <br />
-<div *ngIf(customersList.customers)>
+<div *ngIf='customersList.customers && customersList.customers.length'>
     <table class="table">
         <tr>
             <th>Customer Id</th>

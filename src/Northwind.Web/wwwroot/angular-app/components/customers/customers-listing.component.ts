@@ -41,7 +41,6 @@ export class CustomersListingComponent extends BaseListingComponent implements O
             this.sortDirection)
             .subscribe(customersList => this.customersList = customersList,
             error => this.errorMessage = <any>error);
-        var myVar = "hello";
     }
 
     onPageNumberChanged(newPageNumber: number): void {

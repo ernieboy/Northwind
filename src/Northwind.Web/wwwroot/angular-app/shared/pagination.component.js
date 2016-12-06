@@ -48,7 +48,7 @@ var PaginationComponent = (function () {
         }
     };
     PaginationComponent.prototype.enableConvenienceNavLinks = function () {
-        this.showNextLink = (this.pageNumber != this.totalNumberOfPages);
+        this.showNextLink = (this.pageNumber !== this.totalNumberOfPages);
         this.showPreviousLink = (this.pageNumber > 1);
         this.showLastLink = (this.pageNumber < this.totalNumberOfPages);
         this.showFirstLink = (this.pageNumber > 1);
