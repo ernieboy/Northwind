@@ -10,6 +10,7 @@
 /// <reference path="angular-app/main.js" />
 /// <reference path="angular-app/modules/app.module.js" />
 /// <reference path="angular-app/modules/customer.module.js" />
+/// <reference path="angular-app/modules/shared.module.js" />
 /// <reference path="angular-app/shared/base.listing.component.js" />
 /// <reference path="angular-app/shared/config.js" />
 /// <reference path="angular-app/shared/interfaces/ipaginationdata.js" />

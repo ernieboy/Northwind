@@ -7,7 +7,7 @@ import { CustomerDetailsComponent } from '../components/customers/customer-detai
 import { CustomerDetailsGuard } from '../components/customers/customer-guard-service';
 
 
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from './shared.module';
 
 @NgModule({
     imports: [

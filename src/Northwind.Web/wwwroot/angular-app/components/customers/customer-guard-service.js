@@ -19,7 +19,7 @@ var CustomerDetailsGuard = (function () {
         if (id == null) {
             alert('Invalid customer Id');
             // start a new navigation to redirect to list page
-            this._router.navigate(['/customers']);
+            this._router.navigate(['/customers-list']);
             // abort current navigation
             return false;
         }

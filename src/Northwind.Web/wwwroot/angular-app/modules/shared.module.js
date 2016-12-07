@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
-var pagination_component_1 = require('./pagination.component');
+var pagination_component_1 = require('../shared/pagination.component');
 var SharedModule = (function () {
     function SharedModule() {
     }

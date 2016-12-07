@@ -14,7 +14,7 @@ var customer_service_1 = require('../components/customers/customer.service');
 var customers_listing_component_1 = require('../components/customers/customers-listing.component');
 var customer_details_component_1 = require('../components/customers/customer-details.component');
 var customer_guard_service_1 = require('../components/customers/customer-guard-service');
-var shared_module_1 = require('../shared/shared.module');
+var shared_module_1 = require('./shared.module');
 var CustomerModule = (function () {
     function CustomerModule() {
     }
