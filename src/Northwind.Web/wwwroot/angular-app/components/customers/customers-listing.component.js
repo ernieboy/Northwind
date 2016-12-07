@@ -15,7 +15,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var customer_service_1 = require("./customer.service");
-var base_listing_component_1 = require('../../shared/base.listing.component');
+var base_listing_component_1 = require('../shared/base.listing.component');
 var CustomersListingComponent = (function (_super) {
     __extends(CustomersListingComponent, _super);
     function CustomersListingComponent(_customerService) {

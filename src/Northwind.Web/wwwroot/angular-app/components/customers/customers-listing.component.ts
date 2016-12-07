@@ -2,7 +2,7 @@
 import {ICustomer} from "./customer";
 import {CustomerService} from "./customer.service";
 import {IPaginationData} from "../../shared/interfaces/IPaginationData"
-import { BaseListingComponent } from '../../shared/base.listing.component';
+import { BaseListingComponent } from '../shared/base.listing.component';
 import { ICustomerList } from "./ICustomerList";
 
 

@@ -1,4 +1,4 @@
-﻿import {IPaginationData} from "./interfaces/IPaginationData"
+﻿import {IPaginationData} from "../../shared/interfaces/IPaginationData"
 
 //Note, this class should be abstract but if it's made abstract then it can't be listed in the the shared.modules.ts file.
 export  class BaseListingComponent {
