@@ -2,9 +2,10 @@ import { Component, OnChanges, Input,
     Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
+    moduleId: module.id,
     selector: 'pagination-controls',
-    templateUrl: "angular-app/shared/pagination.component.html",
-    styleUrls: ["angular-app/shared/pagination.component.css"]
+    templateUrl: "pagination.component.html",
+    styleUrls: ["pagination.component.css"]
 
 })
 export class PaginationComponent implements OnChanges, OnInit {

@@ -100,9 +100,10 @@ var PaginationComponent = (function () {
     ], PaginationComponent.prototype, "pageNumberClicked", void 0);
     PaginationComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'pagination-controls',
-            templateUrl: "angular-app/shared/pagination.component.html",
-            styleUrls: ["angular-app/shared/pagination.component.css"]
+            templateUrl: "pagination.component.html",
+            styleUrls: ["pagination.component.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], PaginationComponent);
