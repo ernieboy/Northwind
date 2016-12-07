@@ -6,8 +6,10 @@ import { BaseListingComponent } from '../../shared/base.listing.component';
 import { ICustomerList } from "./ICustomerList";
 
 
-@Component({
-    templateUrl: 'angular-app/components/customers/customers-listing.component.html'
+@
+Component({
+    moduleId: module.id,
+    templateUrl: 'customers-listing.component.html'
 })
 export class CustomersListingComponent extends BaseListingComponent implements OnInit {
     pageTitle: string = 'Products Listing';

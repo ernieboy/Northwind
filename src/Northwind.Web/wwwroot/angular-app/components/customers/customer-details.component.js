@@ -37,7 +37,8 @@ var CustomerDetailsComponent = (function () {
     };
     CustomerDetailsComponent = __decorate([
         core_1.Component({
-            templateUrl: 'angular-app/components/customers/customer-details.component.html'
+            moduleId: module.id,
+            templateUrl: 'customer-details.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, customer_service_1.CustomerService])
     ], CustomerDetailsComponent);

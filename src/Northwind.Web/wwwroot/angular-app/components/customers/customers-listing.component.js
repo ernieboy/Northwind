@@ -51,7 +51,8 @@ var CustomersListingComponent = (function (_super) {
     };
     CustomersListingComponent = __decorate([
         core_1.Component({
-            templateUrl: 'angular-app/components/customers/customers-listing.component.html'
+            moduleId: module.id,
+            templateUrl: 'customers-listing.component.html'
         }), 
         __metadata('design:paramtypes', [customer_service_1.CustomerService])
     ], CustomersListingComponent);

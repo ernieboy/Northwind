@@ -7,7 +7,8 @@ import { ICustomer } from "./customer";
 import { CustomerService } from "./customer.service";
 
 @Component({
-    templateUrl: 'angular-app/components/customers/customer-details.component.html'
+    moduleId: module.id,
+    templateUrl: 'customer-details.component.html'
 })
 export class CustomerDetailsComponent implements OnInit, OnDestroy {
     pageTitle: string = 'Customer Details';
