@@ -7,6 +7,7 @@ import { AppComponent }  from '../components/app.component';
 import { WelcomeComponent } from '../components/welcome/welcome.component';
 
 import { CustomerModule } from './customer.module';
+import { EmployeeModule } from './employee.module';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { CustomerModule } from './customer.module';
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
             { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
         ]),
-        CustomerModule
+        CustomerModule, EmployeeModule
+
     ],
     declarations: [
         AppComponent,

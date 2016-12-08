@@ -10,7 +10,9 @@ export let Config = {
   },
   apiUrls: {
       customersListing: apiRoot + 'customers',
-      findCustomerById: apiRoot + 'customers' + '/{id}' 
+      findCustomerById: apiRoot + 'customers' + '/{id}',
+      employeesListing: apiRoot + 'employees',
+      findEmployeeById: apiRoot + 'employees' + '/{id}' 
      
   },
   entityFrameworkEntityState: {

@@ -15,6 +15,7 @@ var router_1 = require('@angular/router');
 var app_component_1 = require('../components/app.component');
 var welcome_component_1 = require('../components/welcome/welcome.component');
 var customer_module_1 = require('./customer.module');
+var employee_module_1 = require('./employee.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,7 @@ var AppModule = (function () {
                     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
                 ]),
-                customer_module_1.CustomerModule
+                customer_module_1.CustomerModule, employee_module_1.EmployeeModule
             ],
             declarations: [
                 app_component_1.AppComponent,

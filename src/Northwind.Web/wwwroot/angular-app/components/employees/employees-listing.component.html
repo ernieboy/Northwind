@@ -1,0 +1,71 @@
+﻿<br />
+{{pageTitle}}
+
+<br />
+<div *ngIf='employeesList.employees && employeesList.employees.length'>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Employee title</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr *ngFor="let employee of employeesList.employees">
+            <td>
+                {{employee.firstName}}
+            </td>
+            <td>
+                {{employee.lastName}}
+            </td>
+            <td>
+                {{employee.title}}
+            </td>
+            <td>
+                <a [routerLink]="['/employees', employee.employeeId]">
+                    View
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="searchTerms">Search terms separated by commas:</label>
+        <input type="text" class="form-control" id="searchTerms" [(ngModel)]="searchTerms" name="searchTerms" />
+        <input type="submit" value="Search" class="btn btn-sm" (click)="pageData(page,employeesList.paginationData.pageSize,searchTerms,employeesList.paginationData.sortColumn,employeesList.paginationData.sortDirection)" />
+        <input type="submit" value="Clear Search" class="btn btn-sm" (click)="clearSearch()" />
+        <br />
+        <label for="sortColumn">Sort column</label>
+        <select class="form-control" id="sortColumn" (change)="pageData(page,employeesList.paginationData.pageSize,searchTerms,$event.target.value,employeesList.paginationData.sortDirection)"
+                required [(ngModel)]="sortColumn" name="sortColumn">
+            <option value="customerId">Customer Id</option>
+            <option value="contactName">Customer name</option>
+        </select>
+        <br />
+        <label for="sortDirection">Sort direction</label>
+        <select class="form-control" id="sortDirection" (change)="pageData(page,pageSize,searchTerms,sortColumn,$event.target.value)"
+                required [(ngModel)]="sortDirection" name="sortDirection">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </select>
+
+        <br />
+        <label for="pageSize">Number of items to display</label>
+        <select class="form-control" id="pageSize" (change)="pageData(page,$event.target.value,searchTerms,sortColumn,sortDirection)"
+                required [(ngModel)]="pageSize" name="pageSize">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+
+        <p *ngIf(searchTerms)>You searched for {{searchTerms}}</p>
+    </form>
+    <br />
+    <pagination-controls [totalNumberOfPages]='employeesList.paginationData.totalNumberOfPages' [pageNumber]='employeesList.paginationData.pageNumber' [totalNumberOfRecords]='employeesList.paginationData.totalNumberOfRecords'
+                         [offsetFromZero]='employeesList.paginationData.offsetFromZero' [offsetUpperBound]='employeesList.paginationData.offsetUpperBound' [searchTerms]='searchTerms'
+                         [pageSize]='pageSize' (pageNumberClicked)='onPageNumberChanged($event)'>
+    </pagination-controls>
+
+</div>

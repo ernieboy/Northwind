@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Text.Encodings.Web;
 using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
