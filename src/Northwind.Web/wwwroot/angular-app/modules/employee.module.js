@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var employee_service_1 = require('../components/employees/employee.service');
 var employees_listing_component_1 = require('../components/employees/employees-listing.component');
+var employee_details_component_1 = require('../components/employees/employee-details.component');
+var employee_guard_service_1 = require('../components/employees/employee-guard-service');
 var shared_module_1 = require('./shared.module');
 var EmployeeModule = (function () {
     function EmployeeModule() {
@@ -21,14 +23,19 @@ var EmployeeModule = (function () {
             imports: [
                 shared_module_1.SharedModule,
                 router_1.RouterModule.forChild([
-                    { path: 'employees-list', component: employees_listing_component_1.EmployeesListingComponent }
+                    { path: 'employees-list', component: employees_listing_component_1.EmployeesListingComponent },
+                    {
+                        path: 'employee/:id',
+                        canActivate: [employee_guard_service_1.EmployeeDetailsGuard],
+                        component: employee_details_component_1.EmployeeDetailsComponent
+                    }
                 ])
             ],
             declarations: [
-                employees_listing_component_1.EmployeesListingComponent
+                employees_listing_component_1.EmployeesListingComponent, employee_details_component_1.EmployeeDetailsComponent
             ],
             providers: [
-                employee_service_1.EmployeeService
+                employee_service_1.EmployeeService, employee_guard_service_1.EmployeeDetailsGuard
             ]
         }), 
         __metadata('design:paramtypes', [])

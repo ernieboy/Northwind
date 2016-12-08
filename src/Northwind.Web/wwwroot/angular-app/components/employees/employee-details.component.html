@@ -1,0 +1,35 @@
+﻿<br />
+<div class='panel panel-primary' *ngIf='employee'>
+    <div class='panel-heading' style='font-size: large'>
+        {{pageTitle + ': ' + employee.firstName + ': ' + employee.flastName}}
+    </div>
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>Employee Id:</div>
+                    <div class='col-md-6'>{{employee.employeeId}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Name:</div>
+                    <div class='col-md-6'>{{employee.firstName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Surname:</div>
+                    <div class='col-md-6'>{{employee.lastName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>guid:</div>
+                    <div class='col-md-6'>{{employee.guid}}</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width: 80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>
