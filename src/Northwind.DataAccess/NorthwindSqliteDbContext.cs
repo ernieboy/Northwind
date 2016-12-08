@@ -48,6 +48,9 @@ namespace Northwind.DataAccess
 
             modelBuilder.Entity<Employee>(entity =>
             {
+                entity.Ignore(e => e.Id);
+                entity.Ignore(e => e.ObjectState);
+                entity.Ignore(e => e.RowVersion);
                 entity.HasKey(e => e.EmployeeId)
                     .HasName("sqlite_autoindex_Employees_1");
             });

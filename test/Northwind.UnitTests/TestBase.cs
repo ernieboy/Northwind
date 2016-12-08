@@ -2,16 +2,16 @@
 using System.IO;
 using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Northwind.DataAccess;
-using Northwind.Models;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Northwind.Business;
+using Northwind.DataAccess;
+using Northwind.Models;
 using Serilog;
 
-namespace Northwind.UnitTests.DataAccess
+namespace Northwind.UnitTests
 {
     public abstract class TestBase      
     {
@@ -50,10 +50,12 @@ namespace Northwind.UnitTests.DataAccess
 
             //Repositories services 
             services.AddScoped<IDataRepository<Customer>, Northwind.DataAccess.Repositories.CustomerRepository>();
-           
+            services.AddScoped<IDataRepository<Employee>, Northwind.DataAccess.Repositories.EmployeeRepository>();
+
 
             //Business services
             services.AddScoped<IEntityBusiness<Customer>, CustomerBusiness>();
+            services.AddScoped<IEntityBusiness<Employee>, EmployeeBusiness>();
 
             //Note, make sure this line comes after all services have been added to the DI System.
             ServiceProvider = services.BuildServiceProvider();
