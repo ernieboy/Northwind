@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.Encodings.Web;
 using Core.Common.Data.Business;
 using Core.Common.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
@@ -70,9 +71,11 @@ namespace Northwind.Web
 
             //Repositories services 
             services.AddScoped<IDataRepository<Customer>, DataAccess.Repositories.CustomerRepository>();
+            services.AddScoped<IDataRepository<Employee>, DataAccess.Repositories.EmployeeRepository>();
 
             //Business services
             services.AddScoped<IEntityBusiness<Customer>, CustomerBusiness>();
+            services.AddScoped<IEntityBusiness<Employee>, EmployeeBusiness>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -99,6 +102,8 @@ namespace Northwind.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            
 
             app.UseApplicationInsightsExceptionTelemetry();
 
