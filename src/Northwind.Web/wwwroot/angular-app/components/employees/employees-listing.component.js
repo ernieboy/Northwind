@@ -55,9 +55,10 @@ var EmployeesListingComponent = (function (_super) {
             moduleId: module.id,
             templateUrl: 'employees-listing.component.html'
         }), 
-        __metadata('design:paramtypes', [employee_service_1.EmployeeService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof employee_service_1.EmployeeService !== 'undefined' && employee_service_1.EmployeeService) === 'function' && _a) || Object])
     ], EmployeesListingComponent);
     return EmployeesListingComponent;
+    var _a;
 }(base_listing_component_1.BaseListingComponent));
 exports.EmployeesListingComponent = EmployeesListingComponent;
 //# sourceMappingURL=employees-listing.component.js.map

@@ -96,7 +96,7 @@ var PaginationComponent = (function () {
     ], PaginationComponent.prototype, "searchTerms", void 0);
     __decorate([
         core_1.Output(), 
-        __metadata('design:type', core_1.EventEmitter)
+        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
     ], PaginationComponent.prototype, "pageNumberClicked", void 0);
     PaginationComponent = __decorate([
         core_1.Component({
@@ -108,6 +108,7 @@ var PaginationComponent = (function () {
         __metadata('design:paramtypes', [])
     ], PaginationComponent);
     return PaginationComponent;
+    var _a;
 }());
 exports.PaginationComponent = PaginationComponent;
 //# sourceMappingURL=pagination.component.js.map

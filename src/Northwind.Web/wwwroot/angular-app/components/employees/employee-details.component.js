@@ -40,9 +40,10 @@ var EmployeeDetailsComponent = (function () {
             moduleId: module.id,
             templateUrl: 'employee-details.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, employee_service_1.EmployeeService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof employee_service_1.EmployeeService !== 'undefined' && employee_service_1.EmployeeService) === 'function' && _c) || Object])
     ], EmployeeDetailsComponent);
     return EmployeeDetailsComponent;
+    var _a, _b, _c;
 }());
 exports.EmployeeDetailsComponent = EmployeeDetailsComponent;
 //# sourceMappingURL=employee-details.component.js.map

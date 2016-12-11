@@ -40,9 +40,10 @@ var CustomerDetailsComponent = (function () {
             moduleId: module.id,
             templateUrl: 'customer-details.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, customer_service_1.CustomerService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof customer_service_1.CustomerService !== 'undefined' && customer_service_1.CustomerService) === 'function' && _c) || Object])
     ], CustomerDetailsComponent);
     return CustomerDetailsComponent;
+    var _a, _b, _c;
 }());
 exports.CustomerDetailsComponent = CustomerDetailsComponent;
 //# sourceMappingURL=customer-details.component.js.map

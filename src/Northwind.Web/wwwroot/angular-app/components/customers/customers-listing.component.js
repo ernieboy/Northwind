@@ -54,9 +54,10 @@ var CustomersListingComponent = (function (_super) {
             moduleId: module.id,
             templateUrl: 'customers-listing.component.html'
         }), 
-        __metadata('design:paramtypes', [customer_service_1.CustomerService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof customer_service_1.CustomerService !== 'undefined' && customer_service_1.CustomerService) === 'function' && _a) || Object])
     ], CustomersListingComponent);
     return CustomersListingComponent;
+    var _a;
 }(base_listing_component_1.BaseListingComponent));
 exports.CustomersListingComponent = CustomersListingComponent;
 //# sourceMappingURL=customers-listing.component.js.map

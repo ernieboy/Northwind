@@ -1,0 +1,789 @@
+2016-12-11 12:47:08.851 +00:00 [Information] User profile is available. Using '"/Users/ernestfakudze/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2016-12-11 12:47:23.279 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/  
+2016-12-11 12:47:23.401 +00:00 [Information] Creating key {710e13b9-7035-4d9a-aec4-8a79cb58e3bc} with creation date 2016-12-11 12:47:23Z, activation date 2016-12-11 12:47:23Z, and expiration date 2017-03-11 12:47:23Z.
+2016-12-11 12:47:23.406 +00:00 [Warning] No XML encryptor configured. Key {710e13b9-7035-4d9a-aec4-8a79cb58e3bc} may be persisted to storage in unencrypted form.
+2016-12-11 12:47:23.409 +00:00 [Information] Writing data to file '"/Users/ernestfakudze/.aspnet/DataProtection-Keys/key-710e13b9-7035-4d9a-aec4-8a79cb58e3bc.xml"'.
+2016-12-11 12:47:23.737 +00:00 [Information] Executing action method "Northwind.Web.Controllers.HomeController.Index (Northwind.Web)" with arguments (null) - ModelState is Valid
+2016-12-11 12:47:25.241 +00:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-11 12:47:25.931 +00:00 [Information] Executed action "Northwind.Web.Controllers.HomeController.Index (Northwind.Web)" in 2254.8516ms
+2016-12-11 12:47:25.940 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/css/site.min.css?v=G7OG5flN0NdPJ13sNYOv3Hwkc-gAxRfBTYgtu6Sl0yk  
+2016-12-11 12:47:25.956 +00:00 [Information] Sending file. Request path: '"/css/site.min.css"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/css/site.min.css"'
+2016-12-11 12:47:25.981 +00:00 [Information] Request finished in 2753.3651ms 200 text/html; charset=utf-8
+2016-12-11 12:47:25.981 +00:00 [Information] Request finished in 36.636ms 200 text/css
+2016-12-11 12:47:26.108 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner1.svg  
+2016-12-11 12:47:26.108 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/js/site.min.js?v=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU  
+2016-12-11 12:47:26.109 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner2.svg  
+2016-12-11 12:47:26.110 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner3.svg  
+2016-12-11 12:47:26.110 +00:00 [Information] Sending file. Request path: '"/js/site.min.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/js/site.min.js"'
+2016-12-11 12:47:26.110 +00:00 [Information] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/images/banner1.svg"'
+2016-12-11 12:47:26.110 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner4.svg  
+2016-12-11 12:47:26.110 +00:00 [Information] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/images/banner2.svg"'
+2016-12-11 12:47:26.111 +00:00 [Information] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/images/banner3.svg"'
+2016-12-11 12:47:26.111 +00:00 [Information] Request finished in 2.5183ms 200 application/javascript
+2016-12-11 12:47:26.111 +00:00 [Information] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/images/banner4.svg"'
+2016-12-11 12:47:26.113 +00:00 [Information] Request finished in 5.0709ms 200 image/svg+xml
+2016-12-11 12:47:26.113 +00:00 [Information] Request finished in 5.1915ms 200 image/svg+xml
+2016-12-11 12:47:26.113 +00:00 [Information] Request finished in 4.9446ms 200 image/svg+xml
+2016-12-11 12:47:26.162 +00:00 [Information] Request finished in 53.8624ms 200 image/svg+xml
+2016-12-11 12:47:26.321 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2016-12-11 12:47:26.321 +00:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/favicon.ico"'
+2016-12-11 12:47:26.323 +00:00 [Information] Request finished in 2.4058ms 200 image/x-icon
+2016-12-11 12:47:30.917 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/Customers  
+2016-12-11 12:47:30.996 +00:00 [Information] Executing action method "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" with arguments (["", "", "", "", ""]) - ModelState is Valid
+2016-12-11 12:47:30.999 +00:00 [Information] In the Index of the controller!
+2016-12-11 12:47:31.663 +00:00 [Information] Executed DbCommand (792ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:31.683 +00:00 [Information] Executed DbCommand (617ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:31.750 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:31.769 +00:00 [Information] Executed DbCommand (871ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:32.095 +00:00 [Information] Executing ViewResult, running view at path "/Views/Customers/Index.cshtml".
+2016-12-11 12:47:32.541 +00:00 [Information] Executed action "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" in 1621.3292ms
+2016-12-11 12:47:32.544 +00:00 [Information] Session started; Key:"b1b86770-a6ba-491d-1579-dd690c3d7c37", Id:"069d6d50-7040-51e5-d372-13fc8a19be38"
+2016-12-11 12:47:32.551 +00:00 [Information] Request finished in 1634.2417ms 200 text/html; charset=utf-8
+2016-12-11 12:47:35.718 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/Customers/Index?pageNumber=2&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:35.746 +00:00 [Information] Executing action method "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" with arguments (["2", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:35.746 +00:00 [Information] In the Index of the controller!
+2016-12-11 12:47:35.767 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:35.772 +00:00 [Information] Executed DbCommand (116ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:35.773 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:35.774 +00:00 [Information] Executed DbCommand (111ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:35.777 +00:00 [Information] Executing ViewResult, running view at path "/Views/Customers/Index.cshtml".
+2016-12-11 12:47:35.794 +00:00 [Information] Executed action "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" in 67.3201ms
+2016-12-11 12:47:35.796 +00:00 [Information] Request finished in 77.5433ms 200 text/html; charset=utf-8
+2016-12-11 12:47:38.102 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/Customers/Index?pageNumber=5&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:38.103 +00:00 [Information] Executing action method "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" with arguments (["5", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:38.103 +00:00 [Information] In the Index of the controller!
+2016-12-11 12:47:38.104 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:38.105 +00:00 [Information] Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:38.105 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:38.108 +00:00 [Information] Executed DbCommand (247ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:38.109 +00:00 [Information] Executing ViewResult, running view at path "/Views/Customers/Index.cshtml".
+2016-12-11 12:47:38.116 +00:00 [Information] Executed action "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" in 13.4263ms
+2016-12-11 12:47:38.117 +00:00 [Information] Request finished in 14.3632ms 200 text/html; charset=utf-8
+2016-12-11 12:47:40.426 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/Customers/Index?pageNumber=7&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:40.426 +00:00 [Information] Executing action method "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" with arguments (["7", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:40.427 +00:00 [Information] In the Index of the controller!
+2016-12-11 12:47:40.427 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:40.428 +00:00 [Information] Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:40.429 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:40.431 +00:00 [Information] Executed DbCommand (239ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:40.432 +00:00 [Information] Executing ViewResult, running view at path "/Views/Customers/Index.cshtml".
+2016-12-11 12:47:40.440 +00:00 [Information] Executed action "Northwind.Web.Controllers.CustomersController.Index (Northwind.Web)" in 13.281ms
+2016-12-11 12:47:40.440 +00:00 [Information] Request finished in 14.1188ms 200 text/html; charset=utf-8
+2016-12-11 12:47:43.557 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/customers-list  
+2016-12-11 12:47:43.561 +00:00 [Information] Executing action method "Northwind.Web.Controllers.AngularSpaController.Index (Northwind.Web)" with arguments (null) - ModelState is Valid
+2016-12-11 12:47:43.625 +00:00 [Information] Executing ViewResult, running view at path "/Views/AngularSpa/Index.cshtml".
+2016-12-11 12:47:43.636 +00:00 [Information] Executed action "Northwind.Web.Controllers.AngularSpaController.Index (Northwind.Web)" in 75.1318ms
+2016-12-11 12:47:43.636 +00:00 [Information] Request finished in 79.1155ms 200 text/html; charset=utf-8
+2016-12-11 12:47:43.646 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/core-js/client/shim.min.js  
+2016-12-11 12:47:43.647 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/zone.js/dist/zone.js  
+2016-12-11 12:47:43.647 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/reflect-metadata/Reflect.js  
+2016-12-11 12:47:43.647 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/systemjs/dist/system.src.js  
+2016-12-11 12:47:43.648 +00:00 [Information] Sending file. Request path: '"/reflect-metadata/Reflect.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/reflect-metadata/Reflect.js"'
+2016-12-11 12:47:43.648 +00:00 [Information] Sending file. Request path: '"/core-js/client/shim.min.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/core-js/client/shim.min.js"'
+2016-12-11 12:47:43.648 +00:00 [Information] Sending file. Request path: '"/zone.js/dist/zone.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/zone.js/dist/zone.js"'
+2016-12-11 12:47:43.649 +00:00 [Information] Sending file. Request path: '"/systemjs/dist/system.src.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/systemjs/dist/system.src.js"'
+2016-12-11 12:47:43.648 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/systemjs.config.js  
+2016-12-11 12:47:43.649 +00:00 [Information] Sending file. Request path: '"/angular-app/systemjs.config.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/systemjs.config.js"'
+2016-12-11 12:47:43.656 +00:00 [Information] Request finished in 9.6398ms 200 application/javascript
+2016-12-11 12:47:43.659 +00:00 [Information] Request finished in 12.8268ms 200 application/javascript
+2016-12-11 12:47:43.711 +00:00 [Information] Request finished in 63.8142ms 200 application/javascript
+2016-12-11 12:47:43.749 +00:00 [Information] Request finished in 101.9729ms 200 application/javascript
+2016-12-11 12:47:43.789 +00:00 [Information] Request finished in 142.8426ms 200 application/javascript
+2016-12-11 12:47:43.830 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/main.js  
+2016-12-11 12:47:43.831 +00:00 [Information] Sending file. Request path: '"/angular-app/main.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/main.js"'
+2016-12-11 12:47:43.835 +00:00 [Information] Request finished in 5.0149ms 200 application/javascript
+2016-12-11 12:47:43.854 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js  
+2016-12-11 12:47:43.854 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/core/bundles/core.umd.js  
+2016-12-11 12:47:43.854 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/modules/app.module.js  
+2016-12-11 12:47:43.855 +00:00 [Information] Sending file. Request path: '"/@angular/core/bundles/core.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/core/bundles/core.umd.js"'
+2016-12-11 12:47:43.855 +00:00 [Information] Sending file. Request path: '"/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"'
+2016-12-11 12:47:43.855 +00:00 [Information] Sending file. Request path: '"/angular-app/modules/app.module.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/modules/app.module.js"'
+2016-12-11 12:47:43.857 +00:00 [Information] Request finished in 2.6891ms 200 application/javascript
+2016-12-11 12:47:43.868 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/compiler/bundles/compiler.umd.js  
+2016-12-11 12:47:43.868 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js  
+2016-12-11 12:47:43.869 +00:00 [Information] Sending file. Request path: '"/@angular/compiler/bundles/compiler.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/compiler/bundles/compiler.umd.js"'
+2016-12-11 12:47:43.869 +00:00 [Information] Sending file. Request path: '"/@angular/platform-browser/bundles/platform-browser.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"'
+2016-12-11 12:47:43.870 +00:00 [Information] Request finished in 2.1106ms 200 application/javascript
+2016-12-11 12:47:43.874 +00:00 [Information] Request finished in 19.8044ms 200 application/javascript
+2016-12-11 12:47:43.875 +00:00 [Information] Request finished in 20.3767ms 200 application/javascript
+2016-12-11 12:47:43.882 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/common/bundles/common.umd.js  
+2016-12-11 12:47:43.882 +00:00 [Information] Sending file. Request path: '"/@angular/common/bundles/common.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/common/bundles/common.umd.js"'
+2016-12-11 12:47:43.884 +00:00 [Information] Request finished in 2.2268ms 200 application/javascript
+2016-12-11 12:47:43.900 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Subject.js  
+2016-12-11 12:47:43.900 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Observable.js  
+2016-12-11 12:47:43.900 +00:00 [Information] Sending file. Request path: '"/rxjs/Subject.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Subject.js"'
+2016-12-11 12:47:43.900 +00:00 [Information] Sending file. Request path: '"/rxjs/Observable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Observable.js"'
+2016-12-11 12:47:43.902 +00:00 [Information] Request finished in 1.8254ms 200 application/javascript
+2016-12-11 12:47:43.904 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/http/bundles/http.umd.js  
+2016-12-11 12:47:43.904 +00:00 [Information] Sending file. Request path: '"/@angular/http/bundles/http.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/http/bundles/http.umd.js"'
+2016-12-11 12:47:43.904 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/router/bundles/router.umd.js  
+2016-12-11 12:47:43.905 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/app.component.js  
+2016-12-11 12:47:43.905 +00:00 [Information] Sending file. Request path: '"/@angular/router/bundles/router.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/router/bundles/router.umd.js"'
+2016-12-11 12:47:43.905 +00:00 [Information] Sending file. Request path: '"/angular-app/components/app.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/app.component.js"'
+2016-12-11 12:47:43.905 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/welcome/welcome.component.js  
+2016-12-11 12:47:43.906 +00:00 [Information] Sending file. Request path: '"/angular-app/components/welcome/welcome.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/welcome/welcome.component.js"'
+2016-12-11 12:47:43.907 +00:00 [Information] Request finished in 2.6529ms 200 application/javascript
+2016-12-11 12:47:43.907 +00:00 [Information] Request finished in 2.8192ms 200 application/javascript
+2016-12-11 12:47:43.908 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/modules/customer.module.js  
+2016-12-11 12:47:43.908 +00:00 [Information] Sending file. Request path: '"/angular-app/modules/customer.module.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/modules/customer.module.js"'
+2016-12-11 12:47:43.911 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/modules/employee.module.js  
+2016-12-11 12:47:43.911 +00:00 [Information] Sending file. Request path: '"/angular-app/modules/employee.module.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/modules/employee.module.js"'
+2016-12-11 12:47:43.912 +00:00 [Information] Request finished in 44.093ms 200 application/javascript
+2016-12-11 12:47:43.913 +00:00 [Information] Request finished in 8.2828ms 200 application/javascript
+2016-12-11 12:47:43.914 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/root.js  
+2016-12-11 12:47:43.914 +00:00 [Information] Sending file. Request path: '"/rxjs/util/root.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/root.js"'
+2016-12-11 12:47:43.915 +00:00 [Information] Request finished in 1.5858ms 200 application/javascript
+2016-12-11 12:47:43.916 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/toSubscriber.js  
+2016-12-11 12:47:43.917 +00:00 [Information] Sending file. Request path: '"/rxjs/util/toSubscriber.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/toSubscriber.js"'
+2016-12-11 12:47:43.918 +00:00 [Information] Request finished in 12.3659ms 200 application/javascript
+2016-12-11 12:47:43.918 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/symbol/observable.js  
+2016-12-11 12:47:43.919 +00:00 [Information] Sending file. Request path: '"/rxjs/symbol/observable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/symbol/observable.js"'
+2016-12-11 12:47:43.920 +00:00 [Information] Request finished in 1.3116ms 200 application/javascript
+2016-12-11 12:47:43.924 +00:00 [Information] Request finished in 15.8233ms 200 application/javascript
+2016-12-11 12:47:43.925 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/BehaviorSubject.js  
+2016-12-11 12:47:43.925 +00:00 [Information] Sending file. Request path: '"/rxjs/BehaviorSubject.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/BehaviorSubject.js"'
+2016-12-11 12:47:43.926 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/from.js  
+2016-12-11 12:47:43.926 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/from.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/from.js"'
+2016-12-11 12:47:43.927 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/of.js  
+2016-12-11 12:47:43.927 +00:00 [Information] Request finished in 1.9241ms 200 application/javascript
+2016-12-11 12:47:43.927 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/of.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/of.js"'
+2016-12-11 12:47:43.928 +00:00 [Information] Request finished in 28.3472ms 200 application/javascript
+2016-12-11 12:47:43.929 +00:00 [Information] Request finished in 12.644ms 200 application/javascript
+2016-12-11 12:47:43.929 +00:00 [Information] Request finished in 2.4543ms 200 application/javascript
+2016-12-11 12:47:43.930 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/concatMap.js  
+2016-12-11 12:47:43.930 +00:00 [Information] Request finished in 19.7052ms 200 application/javascript
+2016-12-11 12:47:43.931 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/concatMap.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/concatMap.js"'
+2016-12-11 12:47:43.932 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/every.js  
+2016-12-11 12:47:43.932 +00:00 [Information] Request finished in 1.8932ms 200 application/javascript
+2016-12-11 12:47:43.932 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/first.js  
+2016-12-11 12:47:43.933 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/map.js  
+2016-12-11 12:47:43.933 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/every.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/every.js"'
+2016-12-11 12:47:43.933 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/mergeMap.js  
+2016-12-11 12:47:43.934 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/first.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/first.js"'
+2016-12-11 12:47:43.934 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/map.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/map.js"'
+2016-12-11 12:47:43.934 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/reduce.js  
+2016-12-11 12:47:43.934 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/mergeMap.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/mergeMap.js"'
+2016-12-11 12:47:43.934 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/reduce.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/reduce.js"'
+2016-12-11 12:47:43.937 +00:00 [Information] Request finished in 5.176ms 200 application/javascript
+2016-12-11 12:47:43.938 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/catch.js  
+2016-12-11 12:47:43.938 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/catch.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/catch.js"'
+2016-12-11 12:47:43.983 +00:00 [Information] Request finished in 45.1467ms 200 application/javascript
+2016-12-11 12:47:43.983 +00:00 [Information] Request finished in 49.7151ms 200 application/javascript
+2016-12-11 12:47:43.985 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/concatAll.js  
+2016-12-11 12:47:43.985 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/concatAll.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/concatAll.js"'
+2016-12-11 12:47:43.985 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/EmptyError.js  
+2016-12-11 12:47:43.986 +00:00 [Information] Sending file. Request path: '"/rxjs/util/EmptyError.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/EmptyError.js"'
+2016-12-11 12:47:43.987 +00:00 [Information] Request finished in 2.6142ms 200 application/javascript
+2016-12-11 12:47:43.988 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/fromPromise.js  
+2016-12-11 12:47:43.989 +00:00 [Information] Request finished in 56.1872ms 200 application/javascript
+2016-12-11 12:47:43.989 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/fromPromise.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/fromPromise.js"'
+2016-12-11 12:47:43.990 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/last.js  
+2016-12-11 12:47:43.990 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/last.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/last.js"'
+2016-12-11 12:47:43.990 +00:00 [Information] Request finished in 2.1865ms 200 application/javascript
+2016-12-11 12:47:43.991 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/mergeAll.js  
+2016-12-11 12:47:43.992 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/mergeAll.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/mergeAll.js"'
+2016-12-11 12:47:43.992 +00:00 [Information] Request finished in 2.1691ms 200 application/javascript
+2016-12-11 12:47:43.993 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/filter.js  
+2016-12-11 12:47:43.993 +00:00 [Information] Request finished in 2.0777ms 200 application/javascript
+2016-12-11 12:47:43.993 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/filter.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/filter.js"'
+2016-12-11 12:47:43.994 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customer.service.js  
+2016-12-11 12:47:43.995 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customer.service.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customer.service.js"'
+2016-12-11 12:47:43.995 +00:00 [Information] Request finished in 1.7889ms 200 application/javascript
+2016-12-11 12:47:43.996 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customers-listing.component.js  
+2016-12-11 12:47:43.996 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customers-listing.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customers-listing.component.js"'
+2016-12-11 12:47:44.001 +00:00 [Information] Request finished in 6.3009ms 200 application/javascript
+2016-12-11 12:47:44.002 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customer-details.component.js  
+2016-12-11 12:47:44.002 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customer-details.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customer-details.component.js"'
+2016-12-11 12:47:44.006 +00:00 [Information] Request finished in 10.1111ms 200 application/javascript
+2016-12-11 12:47:44.007 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customer-guard-service.js  
+2016-12-11 12:47:44.007 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customer-guard-service.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customer-guard-service.js"'
+2016-12-11 12:47:44.010 +00:00 [Information] Request finished in 8.743ms 200 application/javascript
+2016-12-11 12:47:44.011 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/modules/shared.module.js  
+2016-12-11 12:47:44.012 +00:00 [Information] Sending file. Request path: '"/angular-app/modules/shared.module.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/modules/shared.module.js"'
+2016-12-11 12:47:44.016 +00:00 [Information] Request finished in 8.9759ms 200 application/javascript
+2016-12-11 12:47:44.017 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/ObjectUnsubscribedError.js  
+2016-12-11 12:47:44.017 +00:00 [Information] Sending file. Request path: '"/rxjs/util/ObjectUnsubscribedError.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/ObjectUnsubscribedError.js"'
+2016-12-11 12:47:44.018 +00:00 [Information] Request finished in 1.3721ms 200 application/javascript
+2016-12-11 12:47:44.019 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/ArrayObservable.js  
+2016-12-11 12:47:44.019 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/ArrayObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/ArrayObservable.js"'
+2016-12-11 12:47:44.020 +00:00 [Information] Request finished in 1.3131ms 200 application/javascript
+2016-12-11 12:47:44.021 +00:00 [Information] Request finished in 9.4277ms 200 application/javascript
+2016-12-11 12:47:44.021 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Subscriber.js  
+2016-12-11 12:47:44.022 +00:00 [Information] Sending file. Request path: '"/rxjs/Subscriber.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Subscriber.js"'
+2016-12-11 12:47:44.022 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/symbol/rxSubscriber.js  
+2016-12-11 12:47:44.022 +00:00 [Information] Sending file. Request path: '"/rxjs/symbol/rxSubscriber.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/symbol/rxSubscriber.js"'
+2016-12-11 12:47:44.022 +00:00 [Information] Request finished in 96.3454ms 200 application/javascript
+2016-12-11 12:47:44.022 +00:00 [Information] Request finished in 90.3644ms 200 application/javascript
+2016-12-11 12:47:44.022 +00:00 [Information] Request finished in 90.3877ms 200 application/javascript
+2016-12-11 12:47:44.023 +00:00 [Information] Request finished in 2.2605ms 200 application/javascript
+2016-12-11 12:47:44.024 +00:00 [Information] Request finished in 39.1551ms 200 application/javascript
+2016-12-11 12:47:44.025 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Subscription.js  
+2016-12-11 12:47:44.025 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/SubjectSubscription.js  
+2016-12-11 12:47:44.026 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employee.service.js  
+2016-12-11 12:47:44.026 +00:00 [Information] Sending file. Request path: '"/rxjs/Subscription.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Subscription.js"'
+2016-12-11 12:47:44.026 +00:00 [Information] Sending file. Request path: '"/rxjs/SubjectSubscription.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/SubjectSubscription.js"'
+2016-12-11 12:47:44.026 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employee.service.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employee.service.js"'
+2016-12-11 12:47:44.027 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employees-listing.component.js  
+2016-12-11 12:47:44.027 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employee-details.component.js  
+2016-12-11 12:47:44.027 +00:00 [Information] Request finished in 1.9257ms 200 application/javascript
+2016-12-11 12:47:44.027 +00:00 [Information] Request finished in 1.9903ms 200 application/javascript
+2016-12-11 12:47:44.027 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employees-listing.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employees-listing.component.js"'
+2016-12-11 12:47:44.027 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employee-details.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employee-details.component.js"'
+2016-12-11 12:47:44.029 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employee-guard-service.js  
+2016-12-11 12:47:44.029 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/OuterSubscriber.js  
+2016-12-11 12:47:44.029 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employee-guard-service.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employee-guard-service.js"'
+2016-12-11 12:47:44.030 +00:00 [Information] Sending file. Request path: '"/rxjs/OuterSubscriber.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/OuterSubscriber.js"'
+2016-12-11 12:47:44.031 +00:00 [Information] Request finished in 1.8716ms 200 application/javascript
+2016-12-11 12:47:44.032 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/subscribeToResult.js  
+2016-12-11 12:47:44.032 +00:00 [Information] Sending file. Request path: '"/rxjs/util/subscribeToResult.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/subscribeToResult.js"'
+2016-12-11 12:47:44.033 +00:00 [Information] Request finished in 1.2044ms 200 application/javascript
+2016-12-11 12:47:44.034 +00:00 [Information] Request finished in 7.168ms 200 application/javascript
+2016-12-11 12:47:44.034 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/PromiseObservable.js  
+2016-12-11 12:47:44.034 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/PromiseObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/PromiseObservable.js"'
+2016-12-11 12:47:44.035 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/add/operator/do.js  
+2016-12-11 12:47:44.035 +00:00 [Information] Sending file. Request path: '"/rxjs/add/operator/do.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/add/operator/do.js"'
+2016-12-11 12:47:44.036 +00:00 [Information] Request finished in 1.3755ms 200 application/javascript
+2016-12-11 12:47:44.037 +00:00 [Information] Request finished in 2.0436ms 200 application/javascript
+2016-12-11 12:47:44.037 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/add/operator/catch.js  
+2016-12-11 12:47:44.038 +00:00 [Information] Sending file. Request path: '"/rxjs/add/operator/catch.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/add/operator/catch.js"'
+2016-12-11 12:47:44.038 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/add/operator/map.js  
+2016-12-11 12:47:44.038 +00:00 [Information] Sending file. Request path: '"/rxjs/add/operator/map.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/add/operator/map.js"'
+2016-12-11 12:47:44.039 +00:00 [Information] Request finished in 1.5187ms 200 application/javascript
+2016-12-11 12:47:44.040 +00:00 [Information] Request finished in 1.8397ms 200 application/javascript
+2016-12-11 12:47:44.040 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/shared/config.js  
+2016-12-11 12:47:44.040 +00:00 [Information] Request finished in 11.057ms 200 application/javascript
+2016-12-11 12:47:44.040 +00:00 [Information] Sending file. Request path: '"/angular-app/shared/config.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/shared/config.js"'
+2016-12-11 12:47:44.041 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/shared/base.listing.component.js  
+2016-12-11 12:47:44.041 +00:00 [Information] Sending file. Request path: '"/angular-app/components/shared/base.listing.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/shared/base.listing.component.js"'
+2016-12-11 12:47:44.041 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/ScalarObservable.js  
+2016-12-11 12:47:44.042 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/ScalarObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/ScalarObservable.js"'
+2016-12-11 12:47:44.098 +00:00 [Information] Request finished in 72.8191ms 200 application/javascript
+2016-12-11 12:47:44.100 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/EmptyObservable.js  
+2016-12-11 12:47:44.100 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/EmptyObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/EmptyObservable.js"'
+2016-12-11 12:47:44.102 +00:00 [Information] Request finished in 2.0011ms 200 application/javascript
+2016-12-11 12:47:44.103 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/isScheduler.js  
+2016-12-11 12:47:44.103 +00:00 [Information] Sending file. Request path: '"/rxjs/util/isScheduler.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/isScheduler.js"'
+2016-12-11 12:47:44.107 +00:00 [Information] Request finished in 85.1915ms 200 application/javascript
+2016-12-11 12:47:44.108 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/@angular/forms/bundles/forms.umd.js  
+2016-12-11 12:47:44.109 +00:00 [Information] Sending file. Request path: '"/@angular/forms/bundles/forms.umd.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/@angular/forms/bundles/forms.umd.js"'
+2016-12-11 12:47:44.109 +00:00 [Information] Request finished in 6.3704ms 200 application/javascript
+2016-12-11 12:47:44.111 +00:00 [Information] Request finished in 2.4833ms 200 application/javascript
+2016-12-11 12:47:44.111 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/shared/pagination.component.js  
+2016-12-11 12:47:44.111 +00:00 [Information] Sending file. Request path: '"/angular-app/components/shared/pagination.component.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/shared/pagination.component.js"'
+2016-12-11 12:47:44.112 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/FromObservable.js  
+2016-12-11 12:47:44.112 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/FromObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/FromObservable.js"'
+2016-12-11 12:47:44.113 +00:00 [Information] Request finished in 1.5686ms 200 application/javascript
+2016-12-11 12:47:44.114 +00:00 [Information] Request finished in 73.794ms 200 application/javascript
+2016-12-11 12:47:44.115 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/isFunction.js  
+2016-12-11 12:47:44.115 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Observer.js  
+2016-12-11 12:47:44.115 +00:00 [Information] Sending file. Request path: '"/rxjs/util/isFunction.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/isFunction.js"'
+2016-12-11 12:47:44.115 +00:00 [Information] Sending file. Request path: '"/rxjs/Observer.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Observer.js"'
+2016-12-11 12:47:44.166 +00:00 [Information] Request finished in 50.6454ms 200 application/javascript
+2016-12-11 12:47:44.166 +00:00 [Information] Request finished in 50.8025ms 200 application/javascript
+2016-12-11 12:47:44.168 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/isArray.js  
+2016-12-11 12:47:44.168 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/isObject.js  
+2016-12-11 12:47:44.169 +00:00 [Information] Sending file. Request path: '"/rxjs/util/isArray.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/isArray.js"'
+2016-12-11 12:47:44.169 +00:00 [Information] Sending file. Request path: '"/rxjs/util/isObject.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/isObject.js"'
+2016-12-11 12:47:44.170 +00:00 [Information] Request finished in 59.0933ms 200 application/javascript
+2016-12-11 12:47:44.170 +00:00 [Information] Request finished in 2.002ms 200 application/javascript
+2016-12-11 12:47:44.171 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/tryCatch.js  
+2016-12-11 12:47:44.172 +00:00 [Information] Sending file. Request path: '"/rxjs/util/tryCatch.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/tryCatch.js"'
+2016-12-11 12:47:44.172 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/errorObject.js  
+2016-12-11 12:47:44.172 +00:00 [Information] Sending file. Request path: '"/rxjs/util/errorObject.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/errorObject.js"'
+2016-12-11 12:47:44.173 +00:00 [Information] Request finished in 2.2265ms 200 application/javascript
+2016-12-11 12:47:44.173 +00:00 [Information] Request finished in 1.5418ms 200 application/javascript
+2016-12-11 12:47:44.175 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/UnsubscriptionError.js  
+2016-12-11 12:47:44.175 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/util/isPromise.js  
+2016-12-11 12:47:44.175 +00:00 [Information] Sending file. Request path: '"/rxjs/util/UnsubscriptionError.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/UnsubscriptionError.js"'
+2016-12-11 12:47:44.175 +00:00 [Information] Sending file. Request path: '"/rxjs/util/isPromise.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/util/isPromise.js"'
+2016-12-11 12:47:44.177 +00:00 [Information] Request finished in 1.9575ms 200 application/javascript
+2016-12-11 12:47:44.178 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/symbol/iterator.js  
+2016-12-11 12:47:44.178 +00:00 [Information] Sending file. Request path: '"/rxjs/symbol/iterator.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/symbol/iterator.js"'
+2016-12-11 12:47:44.178 +00:00 [Information] Request finished in 151.2202ms 200 application/javascript
+2016-12-11 12:47:44.179 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/InnerSubscriber.js  
+2016-12-11 12:47:44.179 +00:00 [Information] Request finished in 1.5986ms 200 application/javascript
+2016-12-11 12:47:44.179 +00:00 [Information] Sending file. Request path: '"/rxjs/InnerSubscriber.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/InnerSubscriber.js"'
+2016-12-11 12:47:44.180 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/do.js  
+2016-12-11 12:47:44.180 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/do.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/do.js"'
+2016-12-11 12:47:44.181 +00:00 [Information] Request finished in 1.7409ms 200 application/javascript
+2016-12-11 12:47:44.182 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/toPromise.js  
+2016-12-11 12:47:44.182 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/toPromise.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/toPromise.js"'
+2016-12-11 12:47:44.182 +00:00 [Information] Request finished in 1.9301ms 200 application/javascript
+2016-12-11 12:47:44.183 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/IteratorObservable.js  
+2016-12-11 12:47:44.183 +00:00 [Information] Request finished in 1.6706ms 200 application/javascript
+2016-12-11 12:47:44.183 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/IteratorObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/IteratorObservable.js"'
+2016-12-11 12:47:44.184 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/observable/ArrayLikeObservable.js  
+2016-12-11 12:47:44.184 +00:00 [Information] Sending file. Request path: '"/rxjs/observable/ArrayLikeObservable.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/observable/ArrayLikeObservable.js"'
+2016-12-11 12:47:44.185 +00:00 [Information] Request finished in 1.7249ms 200 application/javascript
+2016-12-11 12:47:44.185 +00:00 [Information] Request finished in 1.4912ms 200 application/javascript
+2016-12-11 12:47:44.186 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/operator/observeOn.js  
+2016-12-11 12:47:44.186 +00:00 [Information] Sending file. Request path: '"/rxjs/operator/observeOn.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/operator/observeOn.js"'
+2016-12-11 12:47:44.187 +00:00 [Information] Request finished in 1.6209ms 200 application/javascript
+2016-12-11 12:47:44.189 +00:00 [Information] Request finished in 147.8451ms 200 application/javascript
+2016-12-11 12:47:44.193 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/node_modules/rxjs/Notification.js  
+2016-12-11 12:47:44.194 +00:00 [Information] Sending file. Request path: '"/rxjs/Notification.js"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/node_modules/rxjs/Notification.js"'
+2016-12-11 12:47:44.195 +00:00 [Information] Request finished in 1.4818ms 200 application/javascript
+2016-12-11 12:47:44.214 +00:00 [Information] Request finished in 173.4755ms 200 application/javascript
+2016-12-11 12:47:44.230 +00:00 [Information] Request finished in 62.2235ms 200 application/javascript
+2016-12-11 12:47:44.230 +00:00 [Information] Request finished in 55.2537ms 200 application/javascript
+2016-12-11 12:47:44.364 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/shared/pagination.component.html  
+2016-12-11 12:47:44.365 +00:00 [Information] Sending file. Request path: '"/angular-app/components/shared/pagination.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/shared/pagination.component.html"'
+2016-12-11 12:47:44.366 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customers-listing.component.html  
+2016-12-11 12:47:44.367 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/customers/customer-details.component.html  
+2016-12-11 12:47:44.367 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customers-listing.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customers-listing.component.html"'
+2016-12-11 12:47:44.367 +00:00 [Information] Sending file. Request path: '"/angular-app/components/customers/customer-details.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/customers/customer-details.component.html"'
+2016-12-11 12:47:44.368 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employees-listing.component.html  
+2016-12-11 12:47:44.368 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employees-listing.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employees-listing.component.html"'
+2016-12-11 12:47:44.369 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/employees/employee-details.component.html  
+2016-12-11 12:47:44.369 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/app.component.html  
+2016-12-11 12:47:44.369 +00:00 [Information] Sending file. Request path: '"/angular-app/components/employees/employee-details.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/employees/employee-details.component.html"'
+2016-12-11 12:47:44.369 +00:00 [Information] Sending file. Request path: '"/angular-app/components/app.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/app.component.html"'
+2016-12-11 12:47:44.372 +00:00 [Information] Request finished in 3.3121ms 200 text/html
+2016-12-11 12:47:44.373 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/welcome/welcome.component.html  
+2016-12-11 12:47:44.373 +00:00 [Information] Sending file. Request path: '"/angular-app/components/welcome/welcome.component.html"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/welcome/welcome.component.html"'
+2016-12-11 12:47:44.423 +00:00 [Information] Request finished in 56.7619ms 200 text/html
+2016-12-11 12:47:44.423 +00:00 [Information] Request finished in 58.8161ms 200 text/html
+2016-12-11 12:47:44.425 +00:00 [Information] Request finished in 56.3089ms 200 text/html
+2016-12-11 12:47:44.432 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/angular-app/components/shared/pagination.component.css  
+2016-12-11 12:47:44.432 +00:00 [Information] Sending file. Request path: '"/angular-app/components/shared/pagination.component.css"'. Physical path: '"/Users/ernestfakudze/Desktop/temp/projects/Northwind/src/Northwind.Web/wwwroot/angular-app/components/shared/pagination.component.css"'
+2016-12-11 12:47:44.436 +00:00 [Information] Request finished in 4.8623ms 200 text/css
+2016-12-11 12:47:44.461 +00:00 [Information] Request finished in 95.1563ms 200 text/html
+2016-12-11 12:47:44.471 +00:00 [Information] Request finished in 103.6647ms 200 text/html
+2016-12-11 12:47:44.473 +00:00 [Information] Request finished in 99.8795ms 200 text/html
+2016-12-11 12:47:44.711 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=1&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:44.722 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["1", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:44.725 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:44.726 +00:00 [Information] Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:44.727 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:44.727 +00:00 [Information] Executed DbCommand (55ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:44.740 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:44.890 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 168.9553ms
+2016-12-11 12:47:44.891 +00:00 [Information] Request finished in 179.3604ms 200 application/json; charset=utf-8
+2016-12-11 12:47:47.613 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=2&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:47.615 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["2", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:47.616 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:47.617 +00:00 [Information] Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:47.618 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:47.619 +00:00 [Information] Executed DbCommand (74ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:47.620 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:47.620 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 5.3394ms
+2016-12-11 12:47:47.620 +00:00 [Information] Request finished in 7.3569ms 200 application/json; charset=utf-8
+2016-12-11 12:47:49.088 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=3&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:49.089 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["3", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:49.089 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:49.090 +00:00 [Information] Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:49.091 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:49.092 +00:00 [Information] Executed DbCommand (69ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:49.093 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:49.093 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 4.7213ms
+2016-12-11 12:47:49.093 +00:00 [Information] Request finished in 5.6301ms 200 application/json; charset=utf-8
+2016-12-11 12:47:50.216 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=4&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:50.217 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["4", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:50.218 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:50.219 +00:00 [Information] Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:50.220 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:50.221 +00:00 [Information] Executed DbCommand (73ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:50.221 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:50.222 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 5.083ms
+2016-12-11 12:47:50.222 +00:00 [Information] Request finished in 6.1086ms 200 application/json; charset=utf-8
+2016-12-11 12:47:51.251 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=5&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:51.251 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["5", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:51.252 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:51.253 +00:00 [Information] Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:51.254 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:51.255 +00:00 [Information] Executed DbCommand (80ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:51.256 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:51.256 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 5.334ms
+2016-12-11 12:47:51.257 +00:00 [Information] Request finished in 6.261ms 200 application/json; charset=utf-8
+2016-12-11 12:47:52.450 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=6&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:52.451 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["6", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:52.452 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:52.453 +00:00 [Information] Executed DbCommand (94ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:52.454 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:52.455 +00:00 [Information] Executed DbCommand (78ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:52.456 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:52.456 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 5.4003ms
+2016-12-11 12:47:52.457 +00:00 [Information] Request finished in 6.4262ms 200 application/json; charset=utf-8
+2016-12-11 12:47:53.582 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=7&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:53.583 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["7", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:53.584 +00:00 [Information] Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:53.585 +00:00 [Information] Executed DbCommand (83ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:53.586 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:53.587 +00:00 [Information] Executed DbCommand (79ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:53.588 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:53.588 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 5.3165ms
+2016-12-11 12:47:53.588 +00:00 [Information] Request finished in 6.2454ms 200 application/json; charset=utf-8
+2016-12-11 12:47:54.721 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=8&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:54.721 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["8", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:54.722 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:54.723 +00:00 [Information] Executed DbCommand (73ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:54.724 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:54.725 +00:00 [Information] Executed DbCommand (68ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:54.726 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:54.726 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 4.9642ms
+2016-12-11 12:47:54.727 +00:00 [Information] Request finished in 5.9396ms 200 application/json; charset=utf-8
+2016-12-11 12:47:55.821 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers?pageNumber=10&pageSize=10&searchTerms=&sortCol=CustomerId&sortDir=ASC  
+2016-12-11 12:47:55.822 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" with arguments (["10", "10", "CustomerId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:47:55.823 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:55.824 +00:00 [Information] Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "a"
+2016-12-11 12:47:55.825 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:55.826 +00:00 [Information] Executed DbCommand (71ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."CustomerID", "a"."Address", "a"."City", "a"."CompanyName", "a"."ContactName", "a"."ContactTitle", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Fax", "a"."Guid", "a"."Phone", "a"."PostalCode", "a"."Region"
+FROM "Customers" AS "a"
+ORDER BY "a"."CustomerID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:47:55.826 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Customer], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:47:55.826 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.List (Northwind.Web)" in 4.9616ms
+2016-12-11 12:47:55.827 +00:00 [Information] Request finished in 5.8181ms 200 application/json; charset=utf-8
+2016-12-11 12:47:58.706 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/customers/WOLZA  
+2016-12-11 12:47:58.708 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.CustomersController.FindByStringId (Northwind.Web)" with arguments (["WOLZA"]) - ModelState is Valid
+2016-12-11 12:47:58.757 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:47:58.773 +00:00 [Information] Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "c"."CustomerID", "c"."Address", "c"."City", "c"."CompanyName", "c"."ContactName", "c"."ContactTitle", "c"."Country", "c"."DateCreated", "c"."DateModified", "c"."Deleted", "c"."Fax", "c"."Guid", "c"."Phone", "c"."PostalCode", "c"."Region"
+FROM "Customers" AS "c"
+WHERE "c"."CustomerID" = 'WOLZA'
+LIMIT 1
+2016-12-11 12:47:58.783 +00:00 [Information] Executing JsonResult, writing value "Northwind.Models.Customer".
+2016-12-11 12:47:58.784 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.CustomersController.FindByStringId (Northwind.Web)" in 76.139ms
+2016-12-11 12:47:58.784 +00:00 [Information] Request finished in 77.7034ms 200 application/json; charset=utf-8
+2016-12-11 12:48:00.858 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/employees-list  
+2016-12-11 12:48:00.859 +00:00 [Information] Executing action method "Northwind.Web.Controllers.AngularSpaController.Index (Northwind.Web)" with arguments (null) - ModelState is Valid
+2016-12-11 12:48:00.859 +00:00 [Information] Executing ViewResult, running view at path "/Views/AngularSpa/Index.cshtml".
+2016-12-11 12:48:00.860 +00:00 [Information] Executed action "Northwind.Web.Controllers.AngularSpaController.Index (Northwind.Web)" in 0.9358ms
+2016-12-11 12:48:00.860 +00:00 [Information] Request finished in 1.786ms 200 text/html; charset=utf-8
+2016-12-11 12:48:01.609 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:01.612 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:01.624 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:01.625 +00:00 [Information] Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:01.631 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:01.635 +00:00 [Information] Executed DbCommand (371ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:01.664 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:01.679 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 68.2783ms
+2016-12-11 12:48:01.679 +00:00 [Information] Request finished in 70.1383ms 200 application/json; charset=utf-8
+2016-12-11 12:48:03.817 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=2&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:03.818 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["2", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:03.819 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:03.820 +00:00 [Information] Executed DbCommand (97ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:03.821 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:03.824 +00:00 [Information] Executed DbCommand (288ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:03.827 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:03.827 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 10.0234ms
+2016-12-11 12:48:03.828 +00:00 [Information] Request finished in 10.9165ms 200 application/json; charset=utf-8
+2016-12-11 12:48:05.799 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:05.799 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:05.800 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:05.801 +00:00 [Information] Executed DbCommand (101ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:05.802 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:05.803 +00:00 [Information] Executed DbCommand (96ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:05.804 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:05.805 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 6.334ms
+2016-12-11 12:48:05.806 +00:00 [Information] Request finished in 7.2228ms 200 application/json; charset=utf-8
+2016-12-11 12:48:07.177 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=2&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:07.177 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["2", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:07.178 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:07.179 +00:00 [Information] Executed DbCommand (83ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:07.180 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:07.181 +00:00 [Information] Executed DbCommand (75ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:07.182 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:07.183 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 5.5185ms
+2016-12-11 12:48:07.183 +00:00 [Information] Request finished in 6.5289ms 200 application/json; charset=utf-8
+2016-12-11 12:48:08.822 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:08.823 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:08.824 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:08.825 +00:00 [Information] Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:08.826 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:08.827 +00:00 [Information] Executed DbCommand (73ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:08.828 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:08.829 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 6.2507ms
+2016-12-11 12:48:08.829 +00:00 [Information] Request finished in 7.1523ms 200 application/json; charset=utf-8
+2016-12-11 12:48:10.552 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=2&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:10.553 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["2", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:10.554 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:10.555 +00:00 [Information] Executed DbCommand (107ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:10.556 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:10.557 +00:00 [Information] Executed DbCommand (80ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:10.558 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:10.559 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 6.4654ms
+2016-12-11 12:48:10.559 +00:00 [Information] Request finished in 7.4672ms 200 application/json; charset=utf-8
+2016-12-11 12:48:11.892 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:11.892 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:11.893 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:11.894 +00:00 [Information] Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:11.895 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:11.896 +00:00 [Information] Executed DbCommand (66ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:11.896 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:11.897 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 4.9962ms
+2016-12-11 12:48:11.898 +00:00 [Information] Request finished in 5.9218ms 200 application/json; charset=utf-8
+2016-12-11 12:48:13.820 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees/3  
+2016-12-11 12:48:13.822 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" with arguments (["3"]) - ModelState is Valid
+2016-12-11 12:48:13.850 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:13.852 +00:00 [Information] Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "e"."EmployeeID", "e"."Address", "e"."BirthDate", "e"."City", "e"."Country", "e"."DateCreated", "e"."DateModified", "e"."Deleted", "e"."Extension", "e"."FirstName", "e"."Guid", "e"."HireDate", "e"."HomePhone", "e"."LastName", "e"."Notes", "e"."Photo", "e"."PhotoPath", "e"."PostalCode", "e"."Region", "e"."ReportsTo", "e"."Title", "e"."TitleOfCourtesy"
+FROM "Employees" AS "e"
+WHERE "e"."EmployeeID" = 3
+LIMIT 1
+2016-12-11 12:48:13.858 +00:00 [Information] Executing JsonResult, writing value "Northwind.Models.Employee".
+2016-12-11 12:48:13.858 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" in 36.0682ms
+2016-12-11 12:48:13.858 +00:00 [Information] Request finished in 38.4926ms 200 application/json; charset=utf-8
+2016-12-11 12:48:15.911 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:15.912 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:15.913 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:15.914 +00:00 [Information] Executed DbCommand (102ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:15.915 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:15.915 +00:00 [Information] Executed DbCommand (65ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:15.916 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:15.917 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 5.707ms
+2016-12-11 12:48:15.918 +00:00 [Information] Request finished in 6.6382ms 200 application/json; charset=utf-8
+2016-12-11 12:48:17.488 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees/1  
+2016-12-11 12:48:17.489 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" with arguments (["1"]) - ModelState is Valid
+2016-12-11 12:48:17.495 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:17.496 +00:00 [Information] Executed DbCommand (73ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "e"."EmployeeID", "e"."Address", "e"."BirthDate", "e"."City", "e"."Country", "e"."DateCreated", "e"."DateModified", "e"."Deleted", "e"."Extension", "e"."FirstName", "e"."Guid", "e"."HireDate", "e"."HomePhone", "e"."LastName", "e"."Notes", "e"."Photo", "e"."PhotoPath", "e"."PostalCode", "e"."Region", "e"."ReportsTo", "e"."Title", "e"."TitleOfCourtesy"
+FROM "Employees" AS "e"
+WHERE "e"."EmployeeID" = 1
+LIMIT 1
+2016-12-11 12:48:17.497 +00:00 [Information] Executing JsonResult, writing value "Northwind.Models.Employee".
+2016-12-11 12:48:17.497 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" in 8.5588ms
+2016-12-11 12:48:17.498 +00:00 [Information] Request finished in 9.4855ms 200 application/json; charset=utf-8
+2016-12-11 12:48:19.510 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:19.510 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:19.511 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:19.513 +00:00 [Information] Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:19.513 +00:00 [Information] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:19.514 +00:00 [Information] Executed DbCommand (64ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:19.515 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:19.516 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 5.3825ms
+2016-12-11 12:48:19.516 +00:00 [Information] Request finished in 6.4929ms 200 application/json; charset=utf-8
+2016-12-11 12:48:21.219 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees/5  
+2016-12-11 12:48:21.220 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" with arguments (["5"]) - ModelState is Valid
+2016-12-11 12:48:21.227 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:21.228 +00:00 [Information] Executed DbCommand (100ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "e"."EmployeeID", "e"."Address", "e"."BirthDate", "e"."City", "e"."Country", "e"."DateCreated", "e"."DateModified", "e"."Deleted", "e"."Extension", "e"."FirstName", "e"."Guid", "e"."HireDate", "e"."HomePhone", "e"."LastName", "e"."Notes", "e"."Photo", "e"."PhotoPath", "e"."PostalCode", "e"."Region", "e"."ReportsTo", "e"."Title", "e"."TitleOfCourtesy"
+FROM "Employees" AS "e"
+WHERE "e"."EmployeeID" = 5
+LIMIT 1
+2016-12-11 12:48:21.229 +00:00 [Information] Executing JsonResult, writing value "Northwind.Models.Employee".
+2016-12-11 12:48:21.229 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" in 9.3556ms
+2016-12-11 12:48:21.229 +00:00 [Information] Request finished in 10.5032ms 200 application/json; charset=utf-8
+2016-12-11 12:48:23.159 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:23.160 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:23.161 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:23.162 +00:00 [Information] Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:23.163 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:23.163 +00:00 [Information] Executed DbCommand (67ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:23.164 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:23.165 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 5.5445ms
+2016-12-11 12:48:23.166 +00:00 [Information] Request finished in 6.4904ms 200 application/json; charset=utf-8
+2016-12-11 12:48:25.404 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees/2  
+2016-12-11 12:48:25.404 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" with arguments (["2"]) - ModelState is Valid
+2016-12-11 12:48:25.411 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:25.412 +00:00 [Information] Executed DbCommand (100ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "e"."EmployeeID", "e"."Address", "e"."BirthDate", "e"."City", "e"."Country", "e"."DateCreated", "e"."DateModified", "e"."Deleted", "e"."Extension", "e"."FirstName", "e"."Guid", "e"."HireDate", "e"."HomePhone", "e"."LastName", "e"."Notes", "e"."Photo", "e"."PhotoPath", "e"."PostalCode", "e"."Region", "e"."ReportsTo", "e"."Title", "e"."TitleOfCourtesy"
+FROM "Employees" AS "e"
+WHERE "e"."EmployeeID" = 2
+LIMIT 1
+2016-12-11 12:48:25.413 +00:00 [Information] Executing JsonResult, writing value "Northwind.Models.Employee".
+2016-12-11 12:48:25.413 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.FindById (Northwind.Web)" in 8.8589ms
+2016-12-11 12:48:25.414 +00:00 [Information] Request finished in 9.7635ms 200 application/json; charset=utf-8
+2016-12-11 12:48:26.986 +00:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/api/employees?pageNumber=1&pageSize=5&searchTerms=&sortCol=EmployeeId&sortDir=ASC  
+2016-12-11 12:48:26.986 +00:00 [Information] Executing action method "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" with arguments (["1", "5", "EmployeeId", "ASC", ""]) - ModelState is Valid
+2016-12-11 12:48:26.987 +00:00 [Information] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:26.988 +00:00 [Information] Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "a"
+2016-12-11 12:48:26.990 +00:00 [Information] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+2016-12-11 12:48:26.990 +00:00 [Information] Executed DbCommand (68ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "a"."EmployeeID", "a"."Address", "a"."BirthDate", "a"."City", "a"."Country", "a"."DateCreated", "a"."DateModified", "a"."Deleted", "a"."Extension", "a"."FirstName", "a"."Guid", "a"."HireDate", "a"."HomePhone", "a"."LastName", "a"."Notes", "a"."Photo", "a"."PhotoPath", "a"."PostalCode", "a"."Region", "a"."ReportsTo", "a"."Title", "a"."TitleOfCourtesy"
+FROM "Employees" AS "a"
+ORDER BY "a"."EmployeeID"
+LIMIT @__p_1 OFFSET @__p_0
+2016-12-11 12:48:26.991 +00:00 [Information] Executing JsonResult, writing value "{ list = System.Collections.Generic.List`1[Northwind.Models.Employee], paginationData = Core.Common.Data.Models.PaginationData }".
+2016-12-11 12:48:26.992 +00:00 [Information] Executed action "Northwind.Web.Controllers.Api.EmployeesController.List (Northwind.Web)" in 5.8783ms
+2016-12-11 12:48:26.993 +00:00 [Information] Request finished in 6.8152ms 200 application/json; charset=utf-8
